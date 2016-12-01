@@ -128,31 +128,15 @@ def clean_slug(instance, slug_field='slug'):
     return instance
 
 
-class AddonManager(ManagerBase):
-
-    def __init__(self, include_deleted=False, include_unlisted=False):
-        # DO NOT change the default value of include_deleted and
-        # include_unlisted unless you've read through the comment just above
-        # the Addon managers declaration/instantiation and understand the
-        # consequences.
-        ManagerBase.__init__(self)
-        self.include_deleted = include_deleted
-        self.include_unlisted = include_unlisted
-
-    def get_queryset(self):
-        qs = super(AddonManager, self).get_queryset()
-        if not self.include_deleted:
-            qs = qs.exclude(status=amo.STATUS_DELETED)
-        if not self.include_unlisted:
-            qs = qs.exclude(is_listed=False)
-        return qs.transform(Addon.transformer)
-
+class AddonQuerySet(caching.CachingQuerySet):
     def id_or_slug(self, val):
+        """Get add-ons by id or slug."""
         if isinstance(val, basestring) and not val.isdigit():
             return self.filter(slug=val)
         return self.filter(id=val)
 
     def enabled(self):
+        """Get add-ons that haven't been disabled by their developer(s)."""
         return self.filter(disabled_by_user=False)
 
     def public(self):
@@ -191,8 +175,8 @@ class AddonManager(ManagerBase):
 
     def listed(self, app, *status):
         """
-        Listed add-ons have a version with a file matching ``status`` and are
-        not disabled.  Personas and self-hosted add-ons will be returned too.
+        Return add-ons that support a given ``app``, have a version with a file
+        matching ``status`` and are not disabled.
         """
         if len(status) == 0:
             status = [amo.STATUS_PUBLIC]
@@ -217,6 +201,71 @@ class AddonManager(ManagerBase):
 
         return q(q(_current_version__isnull=False),
                  disabled_by_user=False, status__in=status)
+
+
+class AddonManager(ManagerBase):
+
+    def __init__(self, include_deleted=False, include_unlisted=False):
+        # DO NOT change the default value of include_deleted and
+        # include_unlisted unless you've read through the comment just above
+        # the Addon managers declaration/instantiation and understand the
+        # consequences.
+        ManagerBase.__init__(self)
+        self.include_deleted = include_deleted
+        self.include_unlisted = include_unlisted
+
+    def get_queryset(self):
+        qs = super(AddonManager, self).get_queryset()
+        qs = qs._clone(klass=AddonQuerySet)
+        if not self.include_deleted:
+            qs = qs.exclude(status=amo.STATUS_DELETED)
+        if not self.include_unlisted:
+            qs = qs.exclude(is_listed=False)
+        return qs.transform(Addon.transformer)
+
+    def id_or_slug(self, val):
+        """Get add-ons by id or slug."""
+        return self.get_queryset().id_or_slug(val)
+
+    def enabled(self):
+        """Get add-ons that haven't been disabled by their developer(s)."""
+        return self.get_queryset().enabled()
+
+    def public(self):
+        """Get public add-ons only"""
+        return self.get_queryset().public()
+
+    def reviewed(self):
+        """Get add-ons with a reviewed status"""
+        return self.get_queryset().reviewed()
+
+    def unreviewed(self):
+        """Get only unreviewed add-ons"""
+        return self.get_queryset().unreviewed()
+
+    def valid(self):
+        """Get valid, enabled add-ons only"""
+        return self.get_queryset().valid()
+
+    def valid_and_disabled_and_pending(self):
+        """
+        Get valid, pending, enabled and disabled add-ons.
+        Used to allow pending theme pages to still be viewed.
+        """
+        return self.get_queryset().valid_and_disabled_and_pending()
+
+    def featured(self, app, lang=None, type=None):
+        """
+        Filter for all featured add-ons for an application in all locales.
+        """
+        return self.get_queryset().featured(app, lang=lang, type=type)
+
+    def listed(self, app, *status):
+        """
+        Return add-ons that support a given ``app``, have a version with a file
+        matching ``status`` and are not disabled.
+        """
+        return self.get_queryset().listed(app, *status)
 
 
 class Addon(OnChangeMixin, ModelBase):
@@ -485,7 +534,7 @@ class Addon(OnChangeMixin, ModelBase):
         return True
 
     @classmethod
-    def initialize_addon_from_upload(cls, data, upload, is_listed=True):
+    def initialize_addon_from_upload(cls, data, upload, channel):
         fields = cls._meta.get_all_field_names()
         guid = data.get('guid')
         old_guid_addon = None
@@ -510,7 +559,7 @@ class Addon(OnChangeMixin, ModelBase):
         addon = Addon(**dict((k, v) for k, v in data.items() if k in fields))
 
         addon.status = amo.STATUS_NULL
-        addon.is_listed = is_listed
+        addon.is_listed = channel == amo.RELEASE_CHANNEL_LISTED
         locale_is_set = (addon.default_locale and
                          addon.default_locale in (
                              settings.AMO_LANGUAGES +
@@ -527,25 +576,24 @@ class Addon(OnChangeMixin, ModelBase):
         return addon
 
     @classmethod
-    def create_addon_from_upload_data(cls, data, upload, user=None, **kwargs):
-        addon = cls.initialize_addon_from_upload(data, upload=upload, **kwargs)
+    def create_addon_from_upload_data(cls, data, upload, channel, user=None,
+                                      **kwargs):
+        addon = cls.initialize_addon_from_upload(data, upload, channel,
+                                                 **kwargs)
         AddonUser(addon=addon, user=user).save()
         return addon
 
     @classmethod
-    def from_upload(cls, upload, platforms, source=None, is_listed=True,
-                    data=None):
-        # TODO: change is_listed arg to channel
+    def from_upload(cls, upload, platforms, source=None,
+                    channel=amo.RELEASE_CHANNEL_LISTED, data=None):
         if not data:
             data = parse_addon(upload)
 
         addon = cls.initialize_addon_from_upload(
-            is_listed=is_listed, data=data, upload=upload)
+            data=data, upload=upload, channel=channel)
 
         if upload.validation_timeout:
             addon.update(admin_review=True)
-        channel = (amo.RELEASE_CHANNEL_LISTED if is_listed else
-                   amo.RELEASE_CHANNEL_UNLISTED)
         Version.from_upload(upload, addon, platforms, source=source,
                             channel=channel)
 
@@ -583,7 +631,7 @@ class Addon(OnChangeMixin, ModelBase):
         return data
 
     def get_url_path(self, more=False, add_prefix=True):
-        if not self.is_listed:  # Not listed? Doesn't have a public page.
+        if not self.current_version:
             return ''
         # If more=True you get the link to the ajax'd middle chunk of the
         # detail page.
@@ -631,13 +679,6 @@ class Addon(OnChangeMixin, ModelBase):
 
     def share_url(self):
         return reverse('addons.share', args=[self.slug])
-
-    @property
-    def automated_signing(self):
-        # We allow automated signing for add-ons which are not listed.
-        # Beta versions are a special case for listed add-ons, and are dealt
-        # with on a file-by-file basis.
-        return not self.is_listed
 
     @amo.cached_property(writable=True)
     def listed_authors(self):
@@ -1260,19 +1301,29 @@ class Addon(OnChangeMixin, ModelBase):
     def is_public(self):
         return self.status == amo.STATUS_PUBLIC and not self.disabled_by_user
 
-    def has_complete_metadata(self):
-        return all(self.get_required_metadata())
+    def has_complete_metadata(self, has_listed_versions=None):
+        """See get_required_metadata for has_listed_versions details."""
+        return all(self.get_required_metadata(
+            has_listed_versions=has_listed_versions))
 
-    def get_required_metadata(self):
-        if not self.has_listed_versions():
+    def get_required_metadata(self, has_listed_versions=None):
+        """If has_listed_versions is not specified this method will return the
+        current (required) metadata (truthy values if present) for this Addon.
+
+        If has_listed_versions is specified then the method will act as if
+        Addon.has_listed_versions() returns that value. Used to predict if the
+        addon will require extra metadata before a version is created."""
+        if has_listed_versions is None:
+            has_listed_versions = self.has_listed_versions()
+        if not has_listed_versions:
             # Add-ons with only unlisted versions have no required metadata.
             return []
-        latest_version = self.find_latest_version(
+        latest_version = self.find_latest_version_including_rejected(
             channel=amo.RELEASE_CHANNEL_LISTED)
         return [
             self.all_categories,
             self.summary,
-            (not latest_version or latest_version.license),
+            (latest_version and latest_version.license),
         ]
 
     def is_pending(self):
