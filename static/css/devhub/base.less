@@ -14,7 +14,6 @@
 // Colors
 @color-text: #333;
 @color-items: #fff;
-@color-background: #fff;
 
 // Color Schemes
 // Light
@@ -50,15 +49,6 @@ h1 {
   margin-top: 0;
 }
 
-section {
-  padding: 20px 20px 60px;
-
-  > p {
-    font-weight: 300;
-    margin-top: 10px;
-  }
-}
-
 // Mixins / Utilities
 .show-on-desktop {
   display: none;
@@ -76,26 +66,65 @@ section {
 
 .content {
   width: 100%;
-  color: @color-text;
-  background-color: @color-background;
+
+  > div {
+    color: @color-text;
+    padding: 20px 20px;
+
+    @media @tablet {
+      padding: 20px 60px;
+      max-width: @grid-max;
+      margin: 0 auto;
+    }
+  }
+
+  p,
+  li {
+    font-weight: 300;
+    color: @color-text;
+  }
 }
 
 .scheme-light {
-  &:extend(.content);
   background-color: @color-scheme-light-background;
-  color: @color-scheme-light-text;
+
+  p,
+  li {
+    color: @color-scheme-light-text;
+  }
+
+  &:before,
+  &:after {
+    background-color: @color-scheme-light-background;
+  }
 }
 
 .scheme-medium {
-  &:extend(.content);
   background-color: @color-scheme-medium-background;
-  color: @color-scheme-medium-text;
+
+  p,
+  li {
+    color: @color-scheme-medium-text;
+  }
+
+  &:before,
+  &:after {
+    background-color: @color-scheme-medium-background;
+  }
 }
 
 .scheme-dark {
-  &:extend(.content);
   background-color: @color-scheme-dark-background;
-  color: @color-scheme-dark-text;
+
+  p,
+  li {
+    color: @color-scheme-dark-text;
+  }
+
+  &:before,
+  &:after {
+    background-color: @color-scheme-dark-background;
+  }
 }
 
 // Components
@@ -142,7 +171,9 @@ section {
 }
 
 .DevHub-Navigation {
-  padding: 0 20px 20px;
+  > div {
+    padding-top: 5px;
+  }
 
   ul {
     align-items: center;
@@ -156,16 +187,7 @@ section {
       margin: 10px 20px;
 
       &:first-child {
-        margin-left: 0;
-        margin-right: auto;
-
-        @media @phone-large {
-          margin-left: 20px;
-        }
-
-        @media @tablet {
-          margin-left: 60px;
-        }
+        margin: 0 auto 0 0;
       }
 
       &.avatar {
@@ -184,42 +206,47 @@ section {
       a {
         color: @color-text;
         text-decoration: none;
-
-        .scheme-light & {
-          color: @color-scheme-light-text
-        }
       }
+    }
+  }
+
+  // Schemas:
+  &.scheme-light {
+    ul li a {
+      color: @color-scheme-light-text;
+    }
+  }
+
+  &.scheme-medium {
+    ul li a {
+      color: @color-scheme-medium-text;
     }
   }
 }
 
-// .DevHub-Overview {
-//   background-color: @primary-section-background;
+.DevHub-Overview {
+  @media @phone-large {
+    text-align: center;
+  }
 
-//   @media @phone-large {
-//     text-align: center;
-//   }
+  h1 {
+    color: @color-scheme-medium-text;
+  }
 
-//   h1,
-//   p {
-//     color: @primary-font-color;
-//   }
+  p {
+    font-size: 24px;
+    margin: 20px auto;
+    max-width: 560px;
 
-//   p {
-//     font-weight: 300;
-//     font-size: 24px;
-//     margin: 20px auto;
-//     max-width: 560px;
+    > a {
+      color: @color-scheme-medium-text;
+    }
 
-//     > a {
-//       color: @primary-font-color;
-//     }
-
-//     @media @phone {
-//       font-size: 20px;
-//     }
-//   }
-// }
+    @media @phone {
+      font-size: 20px;
+    }
+  }
+}
 
 // .DevHub-MoreInformation {
 //   display: flex;
