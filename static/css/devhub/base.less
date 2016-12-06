@@ -28,6 +28,7 @@
 // Dark
 @color-scheme-dark-text: #fff;
 @color-scheme-dark-background: #1d3770;
+@color-scheme-dark-items: #40d38d;
 
 // Common styles
 * {
@@ -248,72 +249,63 @@ h1 {
   }
 }
 
-// .DevHub-MoreInformation {
-//   display: flex;
-//   flex-flow: row nowrap;
-//   background-color: @tertiary-section-background;
-//   color: @primary-font-color;
-//   padding: 0 10% 20px 10%;
+.DevHub-MoreInformation {
+  > div {
+    display: flex;
+    flex-flow: column;
 
+    @media @tablet {
+      flex-flow: row nowrap;
+    }
+  }
+}
 
-//   display: flex;
-//   flex-flow: row nowrap;
-//   background-color: #1d3770;
-//   color: #fff;
-//   padding: 0 10% 20px 10%;
-//   align-items: center;
-//   justify-content: center;
-//   justify-content: space-around;
-//   padding: 10%;
+.DevHub-BlogPosts,
+.DevHub-Tools {
+  line-height: 1.5;
+  margin: 20px 0 auto;
 
-// }
+  h2,
+  h2 a {
+    color: @color-scheme-dark-text;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 32px;
+    margin: 0;
+  }
 
-// .DevHub-BlogPosts,
-// .DevHub-Tools {
-//   flex: 1 100%;
-//   line-height: 1.5;
+  ul {
+    list-style: none;
+    padding: 0;
 
-//   h2,
-//   h2 a {
-//     color: @primary-font-color;
-//     text-decoration: none;
-//     font-weight: 500;
-//     font-size: 32px;
-//     margin: 0;
-//   }
+    li {
+      a {
+        color: @color-scheme-dark-items;
+        text-decoration: none;
+      }
 
-//   ul {
-//     list-style: none;
-//     padding: 0;
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+}
 
-//     li {
-//       a {
-//         color: @tertiary-font-color;
-//         text-decoration: none;
-//       }
+.DevHub-BlogPosts {
+  .read-more {
+    text-decoration: none;
+    color: @color-scheme-dark-items;
+    font-weight: 600;
+  }
+}
 
-//       p {
-//         margin-top: 0;
-//       }
-//     }
-//   }
-// }
-
-// .DevHub-BlogPosts {
-//   .read-more {
-//     text-decoration: none;
-//     color: @tertiary-font-color;
-//     font-weight: 600;
-//   }
-// }
-
-// .DevHub-Tools {
-//   ul {
-//     li {
-//       a {
-//         font-size: 24px;
-//         font-weight: 600;
-//       }
-//     }
-//   }
-// }
+.DevHub-Tools {
+  ul {
+    li {
+      a {
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+  }
+}

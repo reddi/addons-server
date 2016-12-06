@@ -47,9 +47,11 @@
     {% endif %}
 
     {% if not user_authenticated %}
-      <div class="DevHub-MoreInformation">
-        {% include 'devhub/new-landing/components/blog_posts.html' %}
-        {% include 'devhub/new-landing/components/tools.html' %}
+      <div class="DevHub-MoreInformation scheme-dark content">
+        <div>
+          {% include 'devhub/new-landing/components/blog_posts.html' %}
+          {% include 'devhub/new-landing/components/tools.html' %}
+        </div>
       </div>
     {% endif %}
 
