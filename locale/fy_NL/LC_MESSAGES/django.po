@@ -2,13 +2,13 @@
 # Copyright (C) 2006 Mozilla Corporation
 # This file is distributed under the same license as the REMORA package.
 # Wil Clouser <clouserw@mozilla.com>, 2006.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: REMORA 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2016-12-01 06:45+0000\n"
-"PO-Revision-Date: 2016-11-30 13:03+0000\n"
+"PO-Revision-Date: 2016-12-07 10:33+0000\n"
 "Last-Translator: Fjoerfoks <fryskefirefox@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fy_NL\n"
@@ -173,8 +173,8 @@ msgstr "Brûkers wurdt dit altyd frege yn de Add-onbehearder (fan Firefox 4 ôf)
 msgid "Listed"
 msgstr "Fermeld"
 
-# %1 is an add-on name.
 #. l10n: {0} is the addon name
+# %1 is an add-on name.
 #: src/olympia/addons/views.py
 msgid "Contribution for {0}"
 msgstr "Bydrage foar {0}"
@@ -240,9 +240,9 @@ msgstr "De ûnwikkeler fan dizze add-on freget om stipe te toanen troch it meits
 msgid "Contribute"
 msgstr "Bydrage"
 
+#. Click Contribute button OR Install button
 # This is a separator between the graphical [contribute] button and the
 # graphical [download now] button
-#. Click Contribute button OR Install button
 #: src/olympia/addons/templates/addons/contribution.html src/olympia/addons/templates/addons/impala/contribution.html src/olympia/addons/templates/addons/report_abuse.html
 #: src/olympia/devhub/templates/devhub/addons/ajax_compat_update.html src/olympia/devhub/templates/devhub/addons/edit/admin.html src/olympia/devhub/templates/devhub/addons/edit/basic.html
 #: src/olympia/devhub/templates/devhub/addons/edit/details.html src/olympia/devhub/templates/devhub/addons/edit/support.html src/olympia/devhub/templates/devhub/addons/edit/technical.html
@@ -285,15 +285,12 @@ msgstr "Stypje fierdere ûntwikkeling fan <strong>%(addon_name)s</strong> troch 
 
 #: src/olympia/addons/templates/addons/contributions_lightbox.html
 #, python-format
-msgid ""
-"To show your support for <b>%(addon_name)s</b>, the developer asks that you make a donation to the <a href=\"%(charity_url)s\">%(charity_name)s</a> through <a href=\"%(paypal_url)s\">PayPal</a>."
+msgid "To show your support for <b>%(addon_name)s</b>, the developer asks that you make a donation to the <a href=\"%(charity_url)s\">%(charity_name)s</a> through <a href=\"%(paypal_url)s\">PayPal</a>."
 msgstr "Om jo stipe foar <b>%(addon_name)s</b> te toanen, freget de ûntwikkeler om in donaasje oan <a href=\"%(charity_url)s\">%(charity_name)s</a> fia <a href=\"%(paypal_url)s\">PayPal</a>."
 
 #: src/olympia/addons/templates/addons/contributions_lightbox.html
 #, python-format
-msgid ""
-"To show your support for <b>%(addon_name)s</b>, the developer asks that you make a small contribution to <a href=\"%(charity_url)s\">%(charity_name)s</a> through <a href=\"%(paypal_url)s\">PayPal</"
-"a>."
+msgid "To show your support for <b>%(addon_name)s</b>, the developer asks that you make a small contribution to <a href=\"%(charity_url)s\">%(charity_name)s</a> through <a href=\"%(paypal_url)s\">PayPal</a>."
 msgstr "Om jo stipe foar <b>%(addon_name)s</b> te toanen, freget de ûntwikkeler om in lytse bydrage oan <a href=\"%(charity_url)s\">%(charity_name)s</a> fia <a href=\"%(paypal_url)s\">PayPal</a>."
 
 #: src/olympia/addons/templates/addons/contributions_lightbox.html
@@ -384,13 +381,12 @@ msgid "Visibility"
 msgstr "Sichtberheid"
 
 #: src/olympia/addons/templates/addons/details_box.html
-#, fuzzy
 msgid "Visible"
-msgstr "Sichtberheid"
+msgstr "Sichtber"
 
 #: src/olympia/addons/templates/addons/details_box.html src/olympia/devhub/templates/devhub/includes/addon_details.html
 msgid "Invisible"
-msgstr ""
+msgstr "Net sichtber"
 
 #: src/olympia/addons/templates/addons/details_box.html src/olympia/devhub/templates/devhub/addons/edit/technical.html
 msgid "Required Add-ons"
@@ -773,11 +769,11 @@ msgstr "Dizze persona fereasket %(app)s %(new_version)s. Jo brûke op dit stuit 
 
 #: src/olympia/addons/templates/addons/popups.html
 msgid ""
-"<strong>Caution:</strong> This add-on has not been reviewed by Mozilla and can't be installed on release versions of Firefox 43 and above.  Be careful when installing third-party software that "
-"might harm your computer."
+"<strong>Caution:</strong> This add-on has not been reviewed by Mozilla and can't be installed on release versions of Firefox 43 and above.  Be careful when installing third-party software that might"
+" harm your computer."
 msgstr ""
-"<strong>Let op:</strong> dizze add-on is net troch Mozilla beoardiele en kin net ynstallearre wurde yn Firefox-ferzjes 43 en heger. Wês foarsichtich by it ynstallearjen fan software fan tredden "
-"dy't mooglik skea oan jo kompjûter tabringe kin."
+"<strong>Let op:</strong> dizze add-on is net troch Mozilla beoardiele en kin net ynstallearre wurde yn Firefox-ferzjes 43 en heger. Wês foarsichtich by it ynstallearjen fan software fan tredden dy't"
+" mooglik skea oan jo kompjûter tabringe kin."
 
 #: src/olympia/addons/templates/addons/popups.html
 msgid "<strong>Please note:</strong> This add-on is not compatible with your operating system."
@@ -1094,8 +1090,8 @@ msgstr "slute"
 msgid "Thank you for installing {0}"
 msgstr "Tank foar it ynstallearjen fan {0}"
 
-# %1 is an add-on name.
 #. {0} is an add-on name.
+# %1 is an add-on name.
 #: src/olympia/addons/templates/addons/impala/developers.html
 msgid "Meet the {0} Developer"
 msgstr "Kom yn 'e kunde mei de ûntwikkeler fan {0}"
@@ -1314,8 +1310,8 @@ msgid ""
 "Add-ons are applications that let you personalize Firefox with extra functionality and style. Whether you mistype the name of a website or can't read a busy page, there's an add-on to improve your "
 "on-the-go browsing."
 msgstr ""
-"Add-ons binne tapassingen wêrmei jo Firefox fan ekstra funksjonaliteit en styl foarsjen kinne. Oft jo no de namme fan in website ferkeard yntype of in drokke side net lêze kinne, der is altyd wol "
-"in add-on dy't jo sneupûnderfining ferbettert."
+"Add-ons binne tapassingen wêrmei jo Firefox fan ekstra funksjonaliteit en styl foarsjen kinne. Oft jo no de namme fan in website ferkeard yntype of in drokke side net lêze kinne, der is altyd wol in"
+" add-on dy't jo sneupûnderfining ferbettert."
 
 #. {0} is a category name. Ex: "Sports"
 #. {0} is a category name, such as Nature.
@@ -1751,23 +1747,20 @@ msgid "Reviewer Reply"
 msgstr "Antwurd fan beoardieler"
 
 #: src/olympia/amo/log.py
-#, fuzzy
 msgid "Approval notes changed for {addon} {version}."
-msgstr "Opmerking oer {addon} {version}."
+msgstr "Goedkarringsopmerkingen foar {addon} {version} wizige."
 
 #: src/olympia/amo/log.py
 msgid "Approval notes changed"
-msgstr ""
+msgstr "Goedkarringsopmerkingen wizige"
 
 #: src/olympia/amo/log.py
-#, fuzzy
 msgid "Source code uploaded for {addon} {version}."
-msgstr "Antwurd fan ûntwikkeler oer {addon} {version}."
+msgstr "Boarnekoade foar {addon} {version} opladen."
 
 #: src/olympia/amo/log.py
-#, fuzzy
 msgid "Source code uploaded"
-msgstr "Boarnekoadelisinsje"
+msgstr "Boarnekoade opladen"
 
 #: src/olympia/amo/templates/amo/403.html
 msgid "Not allowed"
@@ -1789,8 +1782,8 @@ msgstr "Net fûn"
 #, python-format
 msgid ""
 "<h1>We're sorry, but we can't find what you're looking for.</h1> <p> The page or file you requested wasn't found on our site. It's possible that you clicked a link that's out of date, or typed in "
-"the address incorrectly. </p> <ul> <li>If you typed in the address, please double check the spelling.</li> <li> If you followed a link from somewhere, please <a href=\"https://github.com/mozilla/"
-"addons-server/issues/new/\">file an issue</a>. Tell us where you came from and what you were looking for, and we'll do our best to fix it. </li> </ul> <p>Or you can just jump over to some of the "
+"the address incorrectly. </p> <ul> <li>If you typed in the address, please double check the spelling.</li> <li> If you followed a link from somewhere, please <a href=\"https://github.com/mozilla"
+"/addons-server/issues/new/\">file an issue</a>. Tell us where you came from and what you were looking for, and we'll do our best to fix it. </li> </ul> <p>Or you can just jump over to some of the "
 "popular pages on our website.</p> <ul> <li>Are you interested in a <a href=\"%(rec)s\">list of featured add-ons</a>?</li> <li> Do you want to <a href=\"%(search)s\">search for add-ons</a>? You may "
 "go to the <a href=\"%(search)s\">search page</a> or just use the search field above. </li> <li> If you prefer to start over, just go to the <a href=\"%(home)s\">add-ons front page</a>. </li> </ul>"
 msgstr ""
@@ -2310,8 +2303,8 @@ msgid ""
 "Add-ons that you mark as favorites using the <b>Add to Favorites</b> feature appear below. This collection is currently <b>public</b>, which means everyone can see it. If you would like to hide it "
 "from public view, click the button below to make it private."
 msgstr ""
-"Add-ons dy't jo as favoriten markearje fia de funksje <b>Tafoegje oan favoriten</b> ferskine hjirûnder. Dizze kolleksje is op dit stuit <b>publyklik</b>, wat betsjut dat elkenien dit sjen kin. As "
-"jo dit ferstopje wolle, klik dan op ûndersteande knop om dit privee te meitsjen."
+"Add-ons dy't jo as favoriten markearje fia de funksje <b>Tafoegje oan favoriten</b> ferskine hjirûnder. Dizze kolleksje is op dit stuit <b>publyklik</b>, wat betsjut dat elkenien dit sjen kin. As jo"
+" dit ferstopje wolle, klik dan op ûndersteande knop om dit privee te meitsjen."
 
 #: src/olympia/bandwagon/templates/bandwagon/collection_detail.html
 msgid ""
@@ -2647,8 +2640,8 @@ msgid ""
 "When Mozilla becomes aware of add-ons, plugins, or other third-party software that seriously compromises %(app)s security, stability, or performance and meets <a href=\"%(criteria)s\">certain "
 "criteria</a>, the software may be blocked from general use.  For more information, please read <a href=\"%(support)s\">this support article</a>."
 msgstr ""
-"As Mozilla wit hat fan add-ons, ynstekkers of oare software fan tredden dy't in serieuze bedriging foarmet foar de feilichheid, stabiliteit of prestaasjes fan %(app)s en oan <a href=\"%(criteria)s"
-"\">bepaalde kritearia</a> foldocht, kin de software foar algemien gebrûk blokkearre wurde. Lês foar mear ynformaasje <a href=\"%(support)s\">dit stipe-artikel</a>."
+"As Mozilla wit hat fan add-ons, ynstekkers of oare software fan tredden dy't in serieuze bedriging foarmet foar de feilichheid, stabiliteit of prestaasjes fan %(app)s en oan <a "
+"href=\"%(criteria)s\">bepaalde kritearia</a> foldocht, kin de software foar algemien gebrûk blokkearre wurde. Lês foar mear ynformaasje <a href=\"%(support)s\">dit stipe-artikel</a>."
 
 #: src/olympia/blocklist/templates/blocklist/blocked_detail.html
 #, python-format
@@ -2931,24 +2924,24 @@ msgstr "Mear ynfo"
 
 #: src/olympia/browse/templates/browse/personas/category_landing.html src/olympia/browse/templates/browse/personas/mobile/category_landing.html
 msgid "View All Recently Added"
-msgstr ""
+msgstr "Alle resint tafoege besjen"
 
 #: src/olympia/browse/templates/browse/personas/category_landing.html src/olympia/browse/templates/browse/personas/mobile/category_landing.html
 msgid "View All Most Popular"
-msgstr ""
+msgstr "Alle populêrste besjen"
 
 #: src/olympia/browse/templates/browse/personas/category_landing.html src/olympia/browse/templates/browse/personas/mobile/category_landing.html
 msgid "View All Top Rated"
-msgstr ""
+msgstr "Alle heechst beoardiele besjen"
 
 #: src/olympia/browse/templates/browse/personas/category_landing.html
 #, python-format
 msgid "Over 300,000 designs to personalize your browser! Move your mouse over a Background Theme to try it on. <a href=\"%(url)s\" class=\"more-info\">Start exploring</a>"
-msgstr ""
+msgstr "Mear as 300.000 ûntwerpen om jo browser mei te personalisearjen! Beweech jo mûs oer in eftergrûntema om dit te probearjen. <a href=\"%(url)s\" class=\"more-info\">Begjin mei ferkennen</a>"
 
 #: src/olympia/browse/templates/browse/personas/category_landing.html
 msgid "Want more personalization?"
-msgstr ""
+msgstr "Wolle jo mear personalisaasje?"
 
 #. "Complete" is used as an adjective. "Complete Theme" means a full-featured
 #. theme.
@@ -2956,22 +2949,24 @@ msgstr ""
 #, python-format
 msgid "Complete Themes transform the look of your browser with styles for the window frame, address bar, buttons, tabs, and menus. <a href=\"%(url)s\" class=\"more-info\">Start exploring</a>"
 msgstr ""
+"Folsleine tema’s transformearje de útstrieling fan jo browser mei stilen foar it finsterframe, de adresbalke, knoppen, ljepblêden en menu’s. <a href=\"%(url)s\" class=\"more-info\">Begjin mei "
+"ferkennen</a>"
 
 #: src/olympia/browse/templates/browse/personas/category_landing.html
 msgid "Up & Coming Themes"
-msgstr ""
+msgstr "Oankommende tema’s"
 
 #: src/olympia/browse/templates/browse/personas/category_landing.html
 msgid "View All Up & Coming"
-msgstr ""
+msgstr "Alle oankommende besjen"
 
 #: src/olympia/browse/templates/browse/personas/grid.html
 msgid "No themes found"
-msgstr ""
+msgstr "Gjin tema’s fûn"
 
 #: src/olympia/browse/templates/browse/personas/mobile/category_landing.html
 msgid "Easy-to-use themes for Firefox"
-msgstr ""
+msgstr "Ienfâldich te brûken tema’s foar Firefox"
 
 #: src/olympia/browse/templates/browse/personas/mobile/category_landing.html
 msgid "Popular"
@@ -2996,9 +2991,11 @@ msgstr "Add-on-kompatibiliteitsrapporten"
 #: src/olympia/compat/templates/compat/reporter.html src/olympia/compat/templates/compat/reporter_detail.html
 #, python-format
 msgid ""
-"<p> Reports submitted to us through the <a href=\"%(url_)s\">Add-on Compatibility Reporter</a> are collected here for developers to view. These reports help us determine which add-ons will need "
-"help supporting an upcoming Firefox version. </p>"
+"<p> Reports submitted to us through the <a href=\"%(url_)s\">Add-on Compatibility Reporter</a> are collected here for developers to view. These reports help us determine which add-ons will need help"
+" supporting an upcoming Firefox version. </p>"
 msgstr ""
+"<p> Rapporten dy't by ús fia de <a href=\"%(url_)s\">Add-on Compatibility Reporter</a> yntsjinne wurde, wurde hjir sammele, sadat ûntwikkelers se besjen kinne. Dizze rapporten helpe ús te bepalen "
+"hokker add-ons help nedich hawwe om in takomstige ferzje fan Firefox te stypjen.</p>"
 
 #: src/olympia/compat/templates/compat/reporter.html
 msgid "Reports for your Add-ons"
@@ -3010,11 +3007,11 @@ msgstr "Add-on-kompatibiliteitssintrum"
 
 #: src/olympia/compat/templates/compat/reporter.html
 msgid "Enter the GUID of an add-on below to view any reports we've received."
-msgstr ""
+msgstr "Fier hjirûnder de GUID fan in add-on yn om ûntfongen rapporten te besjen."
 
 #: src/olympia/compat/templates/compat/reporter_detail.html
 msgid "{addon} Compatibility Reports"
-msgstr ""
+msgstr "Kompatibiliteitsrapporten fan {addon}"
 
 #: src/olympia/compat/templates/compat/reporter_detail.html
 msgid "{0} success report"
@@ -3126,7 +3123,7 @@ msgstr "Wacht op goedkarring"
 
 #: src/olympia/constants/base.py
 msgid "Flagged for further review"
-msgstr ""
+msgstr "Markearre foar fierdere beoardieling"
 
 #: src/olympia/constants/base.py
 msgid "Beta"
@@ -3202,15 +3199,15 @@ msgstr "Ynstekkers"
 
 #: src/olympia/constants/base.py
 msgid "Only ask on this add-on's page and developer profile"
-msgstr ""
+msgstr "Allinnich fragen op de side fan dizze add-on en it ûntwikkelersprofyl"
 
 #: src/olympia/constants/base.py
 msgid "Ask after users start downloading this add-on"
-msgstr ""
+msgstr "Fragen eardat brûkers dizze add-on downloade"
 
 #: src/olympia/constants/base.py
 msgid "Ask before users can download this add-on"
-msgstr ""
+msgstr "Fragen eardat brûkers dizze add-on downloade kinne"
 
 #. Review points sources other than add-ons and themes.
 #: src/olympia/constants/base.py src/olympia/constants/categories.py src/olympia/devhub/forms.py src/olympia/editors/templates/editors/performance.html
@@ -3239,88 +3236,88 @@ msgstr "Persona"
 
 #: src/olympia/constants/base.py
 msgid "Manual Reviewer Points"
-msgstr ""
+msgstr "Hânmjittige beoardielerspunten"
 
 #: src/olympia/constants/base.py
 msgid "New Add-on Review"
-msgstr ""
+msgstr "Nije add-on-beoardieling"
 
 #: src/olympia/constants/base.py
 msgid "Preliminary Add-on Review"
-msgstr ""
+msgstr "Foarriedige add-on-beoardieling"
 
 #: src/olympia/constants/base.py
 msgid "Updated Add-on Review"
-msgstr ""
+msgstr "Bywurke add-on-beoardieling"
 
 # Plural in this context means many of the add-on type
 #: src/olympia/constants/base.py
 msgid "New Dictionary Review"
-msgstr ""
+msgstr "Nije wurdboek-beoardieling"
 
 #: src/olympia/constants/base.py
 msgid "Preliminary Dictionary Review"
-msgstr ""
+msgstr "Foarriedige wurdboek-beoardieling"
 
 #: src/olympia/constants/base.py
 msgid "Updated Dictionary Review"
-msgstr ""
+msgstr "Bywurke wurdboek-beoardieling"
 
 #: src/olympia/constants/base.py
 msgid "New Language Pack Review"
-msgstr ""
+msgstr "Nije taalpakket-beoardieling"
 
 #: src/olympia/constants/base.py
 msgid "Preliminary Language Pack Review"
-msgstr ""
+msgstr "Foarriedige taalpakket-beoardieling"
 
 #: src/olympia/constants/base.py
 msgid "Updated Language Pack Review"
-msgstr ""
+msgstr "Bywurke taalpakket-beoardieling"
 
 #: src/olympia/constants/base.py
 msgid "Bonus for overdue reviews"
-msgstr ""
+msgstr "Boanus foar ferrûne beoardielingen"
 
 #: src/olympia/constants/base.py
 msgid "Days Before Bonus Points Applied"
-msgstr ""
+msgstr "Dagen eardat boanuspunten tapast wurde"
 
 #: src/olympia/constants/base.py
 msgid "Theme Review"
-msgstr ""
+msgstr "Temabeoardieling"
 
 #: src/olympia/constants/base.py
 msgid "New Search Provider Review"
-msgstr ""
+msgstr "Nije sykprovider-beoardieling"
 
 #: src/olympia/constants/base.py
 msgid "Preliminary Search Provider Review"
-msgstr ""
+msgstr "Foarriedige sykprovider-beoardieling"
 
 #: src/olympia/constants/base.py
 msgid "Updated Search Provider Review"
-msgstr ""
+msgstr "Bywurke sykprovider-beoardieling"
 
 #: src/olympia/constants/base.py
 msgid "New Complete Theme Review"
-msgstr ""
+msgstr "Nije folslein-temabeoardieling"
 
 #: src/olympia/constants/base.py
 msgid "Preliminary Complete Theme Review"
-msgstr ""
+msgstr "Foarriedige folslein-temabeoardieling"
 
 #: src/olympia/constants/base.py
 msgid "Updated Complete Theme Review"
-msgstr ""
+msgstr "Bywurke folslein-temabeoardieling"
 
 #: src/olympia/constants/base.py
 msgid "Moderated Addon Review"
-msgstr ""
+msgstr "Beoardieling moderearre add-on"
 
 #: src/olympia/constants/base.py
 msgid "Addon Review Moderation Reverted"
-msgstr ""
+msgstr "Beoardielingsevaluaasje add-on ûngedien makke"
 
 #: src/olympia/constants/base.py
 msgid "Level 1"
@@ -3368,11 +3365,11 @@ msgstr "Ynkompatibel"
 
 #: src/olympia/constants/categories.py
 msgid "Alerts & Updates"
-msgstr ""
+msgstr "Warskôgingen en fernijingen"
 
 #: src/olympia/constants/categories.py
 msgid "Appearance"
-msgstr ""
+msgstr "Foarmjouwing"
 
 #: src/olympia/constants/categories.py
 msgid "Bookmarks"
@@ -3669,67 +3666,67 @@ msgstr "Seksuele of pornografyske ynhâld"
 
 #: src/olympia/constants/editors.py
 msgid "Inappropriate or offensive content"
-msgstr ""
+msgstr "Unpaslik of oanstjitjaande ynhâld"
 
 #: src/olympia/constants/editors.py
 msgid "Violence, war, or weaponry images"
-msgstr ""
+msgstr "Ofbyldingen fan geweld, oarloch of wapens"
 
 #: src/olympia/constants/editors.py
 msgid "Nazi or other hate content"
-msgstr ""
+msgstr "Nazystyske of oare haatdragende ynhâld"
 
 #: src/olympia/constants/editors.py
 msgid "Defamatory content"
-msgstr ""
+msgstr "Lasterlike ynhâld"
 
 #: src/olympia/constants/editors.py
 msgid "Online gambling"
-msgstr ""
+msgstr "Online gokke"
 
 #: src/olympia/constants/editors.py
 msgid "Spam content"
-msgstr ""
+msgstr "Spam"
 
 #: src/olympia/constants/editors.py
 msgid "Low-quality, stretched, or blank image"
-msgstr ""
+msgstr "Ofbylding fan lege kwaliteit, oprekt of leech"
 
 #: src/olympia/constants/editors.py
 msgid "Header image alignment problem"
-msgstr ""
+msgstr "Probleem mei útrjochtsjen headerôfbylding"
 
 #: src/olympia/constants/licenses.py
 msgid "All Rights Reserved"
-msgstr ""
+msgstr "Alle rjochten foarbehâlden"
 
 #: src/olympia/constants/licenses.py
 msgid "Creative Commons Attribution 3.0"
-msgstr ""
+msgstr "Creative Commons Attribution 3.0"
 
 #: src/olympia/constants/licenses.py
 msgid "Creative Commons Attribution-NonCommercial 3.0"
-msgstr ""
+msgstr "Creative Commons Attribution-NonCommercial 3.0"
 
 #: src/olympia/constants/licenses.py
 msgid "Creative Commons Attribution-NonCommercial-NoDerivs 3.0"
-msgstr ""
+msgstr "Creative Commons Attribution-NonCommercial-NoDerivs 3.0"
 
 #: src/olympia/constants/licenses.py
 msgid "Creative Commons Attribution-NonCommercial-Share Alike 3.0"
-msgstr ""
+msgstr "Creative Commons Attribution-NonCommercial-Share Alike 3.0"
 
 #: src/olympia/constants/licenses.py
 msgid "Creative Commons Attribution-NoDerivs 3.0"
-msgstr ""
+msgstr "Creative Commons Attribution-NoDerivs 3.0"
 
 #: src/olympia/constants/licenses.py
 msgid "Creative Commons Attribution-ShareAlike 3.0"
-msgstr ""
+msgstr "Creative Commons Attribution-ShareAlike 3.0"
 
 #: src/olympia/constants/platforms.py
 msgid "All Platforms"
-msgstr ""
+msgstr "Alle platfoarms"
 
 #: src/olympia/constants/platforms.py
 msgid "Linux"
@@ -3762,35 +3759,35 @@ msgstr "Kearn"
 #: src/olympia/devhub/feeds.py
 #, python-format
 msgid "Recent Changes for %s"
-msgstr ""
+msgstr "Resinte wizigingen foar %s"
 
 #: src/olympia/devhub/feeds.py
 msgid "Recent Changes for My Add-ons"
-msgstr ""
+msgstr "Resinte wizigingen foar myn add-ons"
 
 #: src/olympia/devhub/forms.py
 msgid "Must have at least one owner."
-msgstr ""
+msgstr "Der moat op syn minst ien eigener wêze."
 
 #: src/olympia/devhub/forms.py
 msgid "At least one author must be listed."
-msgstr ""
+msgstr "Der moat op syn minst ien skriuwer fermeld wurde."
 
 #: src/olympia/devhub/forms.py
 msgid "An author can only be listed once."
-msgstr ""
+msgstr "In skriuwer kin mar ien kear fermeld wurde."
 
 #: src/olympia/devhub/forms.py
 msgid "Slug incorrect."
-msgstr ""
+msgstr "Koade net krekt."
 
 #: src/olympia/devhub/forms.py
 msgid "Invalid JSON object"
-msgstr ""
+msgstr "Unjildich JSON-objekt"
 
 #: src/olympia/devhub/forms.py
 msgid "Message not eligible for annotation"
-msgstr ""
+msgstr "Berjocht net geskikt foar annotaasje"
 
 #: src/olympia/devhub/forms.py src/olympia/devhub/templates/devhub/versions/edit.html src/olympia/users/templates/users/edit.html
 msgid "Details"
@@ -3798,140 +3795,140 @@ msgstr "Details"
 
 #: src/olympia/devhub/forms.py
 msgid "What is your license's name?"
-msgstr ""
+msgstr "Wat is de namme fan jo lisinsje?"
 
 #: src/olympia/devhub/forms.py
 msgid "Provide the text of your license."
-msgstr ""
+msgstr "Jou de tekst fan jo lisinsje."
 
 #: src/olympia/devhub/forms.py
 msgid "License text is required when choosing Other."
-msgstr ""
+msgstr "As jo Oars kieze, is in lisinsjetekst fereaske."
 
 #: src/olympia/devhub/forms.py
 msgid "This add-on has an End-User License Agreement"
-msgstr ""
+msgstr "Dizze add-on hat in brûksrjochtoerienkomst"
 
 #: src/olympia/devhub/forms.py
 msgid "Please specify your add-on's End-User License Agreement:"
-msgstr ""
+msgstr "Jou de brûksrjochtoerienkomst fan jo add-on op:"
 
 #: src/olympia/devhub/forms.py
 msgid "This add-on has a Privacy Policy"
-msgstr ""
+msgstr "Dizze add-on hat in privacybelied"
 
 #: src/olympia/devhub/forms.py
 msgid "Please specify your add-on's Privacy Policy:"
-msgstr ""
+msgstr "Jou it privacybelied fan jo add-on op:"
 
 #: src/olympia/devhub/forms.py
 msgid "Why did you make this add-on?"
-msgstr ""
+msgstr "Wêrom hawwe jo bydroegen?"
 
 #: src/olympia/devhub/forms.py
 msgid "What's next for this add-on?"
-msgstr ""
+msgstr "Wat biedt de takomst foar dizze add-on?"
 
 #: src/olympia/devhub/forms.py
 msgid "The developers of this add-on"
-msgstr ""
+msgstr "De ûntwikkelers fan dizze add-on"
 
 #: src/olympia/devhub/forms.py
 msgid "The Mozilla Foundation"
-msgstr ""
+msgstr "De Mozilla Foundation"
 
 #: src/olympia/devhub/forms.py
 msgid "An organization of my choice"
-msgstr ""
+msgstr "In troch my keazen organisaasje"
 
 #: src/olympia/devhub/forms.py
 msgid "Please enter a suggested amount greater than 0."
-msgstr ""
+msgstr "Fier in foarsteld bedrach yn dat grutter is as 0."
 
 #: src/olympia/devhub/forms.py
 msgid "Please enter a suggested amount less than ${0}."
-msgstr ""
+msgstr "Fier in foarsteld bedrach yn dat leger is as ${0}."
 
 #: src/olympia/devhub/forms.py
 msgid "PayPal ID required to accept contributions."
-msgstr ""
+msgstr "PayPal-ID is fereaske om bydragen akseptearje te kinnen."
 
 #: src/olympia/devhub/forms.py
 msgid "Could not validate PayPal id."
-msgstr ""
+msgstr "Kin PayPal-identiteit net falidearje."
 
 #: src/olympia/devhub/forms.py
 msgid "Unsupported file type, please upload an archive file {extensions}."
-msgstr ""
+msgstr "Net-stipe bestânstype, laad in argyfbestân {extensions} op."
 
 #: src/olympia/devhub/forms.py
 msgid "View current"
-msgstr ""
+msgstr "Aktuele werjaan"
 
 #: src/olympia/devhub/forms.py
 msgid "Invalid version range."
-msgstr ""
+msgstr "Unjildich ferzjeberik."
 
 #: src/olympia/devhub/forms.py
 msgid "Need at least one compatible application."
-msgstr ""
+msgstr "Der moat op syn minst ien kompatibele tapassing wêze."
 
 #: src/olympia/devhub/forms.py
 msgid "There was an error with your upload. Please try again."
-msgstr ""
+msgstr "Der is in flater bard wylst jo oplaad. Probearje it nochris."
 
 #: src/olympia/devhub/forms.py
 msgid "Override failed validation"
-msgstr ""
+msgstr "Mislearre falidaasje negearje"
 
 #: src/olympia/devhub/forms.py
 msgid "Submit my add-on for manual review."
-msgstr ""
+msgstr "Myn add-on foar beoardieling yntsjinje."
 
 #: src/olympia/devhub/forms.py
 msgid "Do not list my add-on on this site"
-msgstr ""
+msgstr "Myn add-on net op dizze website werjaan"
 
 #: src/olympia/devhub/forms.py
 msgid "Check this option if you intend to distribute your add-on on your own and only need it to be signed by Mozilla."
-msgstr ""
+msgstr "Finkje dizze opsje oan as jo jo add-on sels ferspriede wolle en allinnich troch Mozilla ûndertekenje litte wolle."
 
 #: src/olympia/devhub/forms.py
 msgid "A file with a version ending with a|alpha|b|beta|pre|rc and an optional number is detected as beta."
-msgstr ""
+msgstr "In bestân mei in ferzje dy't einiget op a|alpha|b|beta|pre|rc en in opsjoneel sifer wurdt as bêta detektearre."
 
 #: src/olympia/devhub/forms.py
 msgid "You cannot upload any more files for this version."
-msgstr ""
+msgstr "Jo kinne gjin bestannen mear oplade foar dizze ferzje."
 
 #: src/olympia/devhub/forms.py
 msgid "Version doesn't match"
-msgstr ""
+msgstr "Ferzje komt net oerien"
 
 #: src/olympia/devhub/forms.py
 #, python-format
 msgid "Version %s already exists, or was uploaded before."
-msgstr ""
+msgstr "Ferzje %s bestiet al of is earder opladen."
 
 #: src/olympia/devhub/forms.py
 msgid "Select a valid choice. That choice is not one of the available choices."
-msgstr ""
+msgstr "Selektearje in jildige kar. Dy kar is net beskikber."
 
 #: src/olympia/devhub/forms.py
 msgid "A file with a version ending with a|alpha|b|beta and an optional number is detected as beta."
-msgstr ""
+msgstr "In bestân mei in ferzje einigjend op a|alpha|b|beta en in opsjoneel nûmer wurdt as bêta detektearre."
 
 #: src/olympia/devhub/forms.py
 msgid "You cannot delete a file once the review process has started.  You must delete the whole version."
-msgstr ""
+msgstr "Jo kinne in bestân net fuortsmite as it beoardielingsproses start is. Jo moatte de hiele ferzje fuortsmite."
 
 #: src/olympia/devhub/forms.py
 msgid "The platform All cannot be combined with specific platforms."
-msgstr ""
+msgstr "It platfoarm Alle kin net mei spesifike platfoarms kombinearre wurde."
 
 #: src/olympia/devhub/forms.py
 msgid "A platform can only be chosen once."
-msgstr ""
+msgstr "In platfoarm kin mar ien kear keazen wurde."
 
 #: src/olympia/devhub/forms.py src/olympia/devhub/templates/devhub/addons/ajax_compat_update.html src/olympia/editors/forms.py src/olympia/zadmin/forms.py
 msgid "Application"
@@ -3939,11 +3936,11 @@ msgstr "Tapassing"
 
 #: src/olympia/devhub/forms.py src/olympia/editors/forms.py src/olympia/zadmin/forms.py
 msgid "Select an application first"
-msgstr ""
+msgstr "Selektearje earst in tapassing"
 
 #: src/olympia/devhub/forms.py
 msgid "There cannot be more than 3 required add-ons."
-msgstr ""
+msgstr "Der meie net mear as 3 fereaske add-ons wêze."
 
 #: src/olympia/devhub/forms.py
 msgid ""
@@ -3951,19 +3948,18 @@ msgid ""
 "by this site. This add-on will also be considered for Mozilla promotions and contests. Self-distribution of the reviewed files is also possible.</span>"
 msgstr ""
 "Op dizze website. <span class=\"helptext\">Nei suksesfolle beoardieling fan de koade wurdt jo ynstjoering foar miljoenen brûkers op dizze website en yn de Add-onbehearder fan Firefox fermeld. "
-"Automatyske fernijingen wurde troch dizze website fersoarge. Dizze add-on komt ek yn oanmerking foar Mozilla-promoasjes en -wedstriden. Eigen distribúsje fan de beoardiele bestannen is ek mooglik.</"
-"span>"
+"Automatyske fernijingen wurde troch dizze website fersoarge. Dizze add-on komt ek yn oanmerking foar Mozilla-promoasjes en -wedstriden. Eigen distribúsje fan de beoardiele bestannen is ek "
+"mooglik.</span>"
 
 #: src/olympia/devhub/forms.py
-msgid ""
-"On your own. <span class=\"helptext\">Your submission will be immediately signed for self-distribution. Updates should be handled by you via an updateURL or external application updates.</span>"
+msgid "On your own. <span class=\"helptext\">Your submission will be immediately signed for self-distribution. Updates should be handled by you via an updateURL or external application updates.</span>"
 msgstr ""
 "Op dy fan josels. <span class=\"helptext\">Jo ynstjoering wurdt daliks ûndertekene foar eigen distribúsje. Fernijingen moatte troch josels fersoarge wurde fia in fernijings-URL of eksterne "
 "tapassingsfernijingen.</span>"
 
 #: src/olympia/devhub/helpers.py
 msgid "Add-on Documentation :: Developer Hub"
-msgstr ""
+msgstr "Add-ondokumintaasje :: Untwikkelershub"
 
 #: src/olympia/devhub/helpers.py
 msgid "My Submissions"
@@ -3973,16 +3969,16 @@ msgstr "Myn bydragen"
 msgid "Developer Docs"
 msgstr "Untwikkelersdokuminten"
 
-# {0} is a number
 #. L10n: first parameter is the number of errors
+# {0} is a number
 #: src/olympia/devhub/helpers.py
 msgid "{0} error"
 msgid_plural "{0} errors"
 msgstr[0] "{0} flater"
 msgstr[1] "{0} flaters"
 
-# {0} is a number
 #. L10n: first parameter is the number of warnings
+# {0} is a number
 #: src/olympia/devhub/helpers.py
 msgid "{0} warning"
 msgid_plural "{0} warnings"
@@ -3996,30 +3992,32 @@ msgstr "Beoardieling"
 #: src/olympia/devhub/tasks.py
 msgid "We allow and encourage an upgrade but you cannot reverse this process. Once your users have the WebExtension installed, they will not be able to install a legacy add-on."
 msgstr ""
+"Wy stean in fernijing ta en riede dit ek oan, mar jo kinne dit proses net ûngedien meitsje. As jo brûkers de WebExtension ien kear ynstallearre hawwe, kinne se gjin ferâldere add-on mear "
+"ynstallearje."
 
 #: src/olympia/devhub/tasks.py
 msgid "You cannot update a WebExtensions add-on with a legacy add-on. Your users would not be able to use your new version because Firefox does not support this type of update."
-msgstr ""
+msgstr "Jo kinne gjin WebExtensions-add-on bywurkje mei in ferâldere add-on. Jo brûkers soenen jo nije ferzje dan net brûke kinne, omdat Firefox dit type fernijing net stipet."
 
 #: src/olympia/devhub/tasks.py
 #, python-format
 msgid "%s responded with %s (%s)."
-msgstr ""
+msgstr "%s hat antwurde mei %s (%s)."
 
 #: src/olympia/devhub/tasks.py
 #, python-format
 msgid "Connection to \"%s\" timed out."
-msgstr ""
+msgstr "Wachttiid foar ferbining mei ‘%s’ foarby."
 
 #: src/olympia/devhub/tasks.py
 #, python-format
 msgid "Could not contact host at \"%s\"."
-msgstr ""
+msgstr "Kin gjin ferbining meitsje mei de host op ‘%s’."
 
 #: src/olympia/devhub/utils.py
 #, python-format
 msgid "Validation generated too many errors/warnings so %s messages were truncated. After addressing the visible messages, you'll be able to see the others."
-msgstr ""
+msgstr "De falidaasje levere te folle flaters/warskôgingen op, dus %s berjochten binne ynkoarte. Neidat de sichtbere berjochten adressearre binne kinne jo de oare lêze."
 
 #: src/olympia/devhub/views.py
 msgid "All My Add-ons"
@@ -4039,158 +4037,158 @@ msgstr "Add-on-steat"
 
 #: src/olympia/devhub/views.py
 msgid "User Collections"
-msgstr ""
+msgstr "Brûkerskolleksjes"
 
 #: src/olympia/devhub/views.py src/olympia/pages/templates/pages/dev_faq.html
 msgid "User Reviews"
-msgstr ""
+msgstr "Brûkersbeoardielingen"
 
 #: src/olympia/devhub/views.py
 msgid "Changes successfully saved."
-msgstr ""
+msgstr "Wizigingen mei sukses bewarre."
 
 #: src/olympia/devhub/views.py
 msgid "Please check the form for errors."
-msgstr ""
+msgstr "Kontrolearje it formulier op flaters."
 
 #: src/olympia/devhub/views.py
 msgid "Add-on cannot be deleted. Disable this add-on instead."
-msgstr ""
+msgstr "Add-on kin net fuortsmiten wurde. Skeakelje dizze add-on út."
 
 #: src/olympia/devhub/views.py
 msgid "Theme deleted."
-msgstr ""
+msgstr "Tema fuortsmiten."
 
 #: src/olympia/devhub/views.py
 msgid "Add-on deleted."
-msgstr ""
+msgstr "Add-on fuortsmiten."
 
 #: src/olympia/devhub/views.py
 msgid "URL name was incorrect. Theme was not deleted."
-msgstr ""
+msgstr "URL-namme net krekt. Tema is net fuortsmiten."
 
 #: src/olympia/devhub/views.py
 msgid "URL name was incorrect. Add-on was not deleted."
-msgstr ""
+msgstr "URL-namme net krekt. Add-on is net fuortsmiten."
 
 #: src/olympia/devhub/views.py
 msgid "An author has been added to your add-on"
-msgstr ""
+msgstr "Der is in skriuwer oan jo add-on tafoege"
 
 #: src/olympia/devhub/views.py
 msgid "An author has a role changed on your add-on"
-msgstr ""
+msgstr "In skriuwer hat in wizige rol foar jo add-on"
 
 #: src/olympia/devhub/views.py
 msgid "An author has been removed from your add-on"
-msgstr ""
+msgstr "Der is in skriuwer fuortsmiten fan jo add-on"
 
 #: src/olympia/devhub/views.py
 msgid "There were errors in your submission."
-msgstr ""
+msgstr "Der binne flaters bard wylst it yntsjinjen."
 
 #: src/olympia/devhub/views.py
 msgid "Validate Add-on"
-msgstr ""
+msgstr "Add-on falidearje"
 
 #: src/olympia/devhub/views.py
 msgid "Check Add-on Compatibility"
-msgstr ""
+msgstr "Add-on-kompatibiliteit kontrolearje"
 
 #: src/olympia/devhub/views.py src/olympia/signing/views.py
 msgid "You cannot submit this type of add-on"
-msgstr ""
+msgstr "Jo kinne dit type add-on net yntsjinje"
 
 #: src/olympia/devhub/views.py src/olympia/users/forms.py
 msgid "Images must be either PNG or JPG."
-msgstr ""
+msgstr "Ofbyldingen moatte fan it type PNG of JPG wêze."
 
 #: src/olympia/devhub/views.py
 msgid "Icons cannot be animated."
-msgstr ""
+msgstr "Piktogrammen meie net bewegend wêze."
 
 #: src/olympia/devhub/views.py
 msgid "Images cannot be animated."
-msgstr ""
+msgstr "Ofbyldingen meie net bewegend wêze."
 
 #: src/olympia/devhub/views.py
 #, python-format
 msgid "Images cannot be larger than %dKB."
-msgstr ""
+msgstr "Ofbyldingen meie net grutter wêze as %dKB."
 
 #. L10n: {0} is an image width (in pixels), {1} is a height.
 #: src/olympia/devhub/views.py
 msgid "Image must be exactly {0} pixels wide and {1} pixels tall."
-msgstr ""
+msgstr "Ofbyldingen moatte eksakt {0} piksels breed en {1} piksels heech wêze."
 
 #: src/olympia/devhub/views.py
 msgid "There was an error uploading your preview."
-msgstr ""
+msgstr "Der is in flater bard by it opladen fan jo foarbyld."
 
 #: src/olympia/devhub/views.py
 #, python-format
 msgid "Version %s disabled."
-msgstr ""
+msgstr "Ferzje %s útskeakele."
 
 #: src/olympia/devhub/views.py
 #, python-format
 msgid "Version %s deleted."
-msgstr ""
+msgstr "Ferzje %s fuortsmiten."
 
 #: src/olympia/devhub/views.py
 #, python-format
 msgid "Version %s re-enabled."
-msgstr ""
+msgstr "Ferzje %s opnij ynskeakele."
 
 #: src/olympia/devhub/views.py
 msgid "This upload has failed validation, and may lack complete validation results. Please take due care when reviewing it."
-msgstr ""
+msgstr "De falidaasje fan dizze oplaad is mislearre en der ûntbrekke mooglik folsleine falidaasjeresultaten. Let goed op by de beoardieling."
 
 #: src/olympia/devhub/views.py
 msgid "Review Requested."
-msgstr ""
+msgstr "Beoardieling oanfrege."
 
 #: src/olympia/devhub/views.py
 msgid "Your old credentials were revoked and are no longer valid. Be sure to update all API clients with the new credentials."
-msgstr ""
+msgstr "Jo âlde referinsjes binne ynlutsen en net mear jildich. Soargje derfoar dat jo alle API-clients bywurkje mei de nije referinsjes."
 
 #: src/olympia/devhub/views.py
 msgid "Your old credentials were revoked and are no longer valid."
-msgstr ""
+msgstr "Jo âlde oanmeldgegevens binne ynlutsen en binne net mear jildich."
 
 #: src/olympia/devhub/views.py
 msgid "New API key created"
-msgstr ""
+msgstr "Nije API-kaai makke"
 
 #: src/olympia/devhub/views.py
 msgid "API key revoked"
-msgstr ""
+msgstr "API-kaai ynlutsen"
 
 #: src/olympia/devhub/templates/devhub/agreement.html
 msgid "Before starting, please read and accept our Firefox Add-on Distribution Agreement. It also links to our Privacy Notice which explains how we handle your information."
-msgstr ""
+msgstr "Lês en akseptearje eardat jo begjinne ús Firefox-add-on-distribúsje-oerienkomst. Dizze ferwiist ek nei ús Privacyferklearring, dy't útleit hoe't wy mei jo gegevens omgean."
 
 #: src/olympia/devhub/templates/devhub/agreement.html
 msgid "Printable Version"
-msgstr ""
+msgstr "Ofdrukbere ferzje"
 
 #: src/olympia/devhub/templates/devhub/agreement.html
 msgid "I Accept this Agreement"
-msgstr ""
+msgstr "Ik akseptearje dizze Oerienkomst"
 
 #: src/olympia/devhub/templates/devhub/agreement.html
 msgid "or <a href=\"{0}\">Cancel</a>"
-msgstr ""
+msgstr "of <a href=\"{0}\">Annulearje</a>"
 
 #: src/olympia/devhub/templates/devhub/base.html src/olympia/devhub/templates/devhub/base_impala.html src/olympia/legacy_discovery/templates/legacy_discovery/addons/base.html
 msgid "Back to Add-ons"
-msgstr ""
+msgstr "Tebek nei add-ons"
 
 #. {0} is a search term, such as Firebug.
 #. {0} is a search query.
 #: src/olympia/devhub/templates/devhub/devhub_search.html src/olympia/search/templates/search/mobile/results.html src/olympia/search/templates/search/results.html
 msgid "{0} :: Search"
-msgstr ""
+msgstr "{0} :: Sykje"
 
 #: src/olympia/devhub/templates/devhub/devhub_search.html src/olympia/devhub/templates/devhub/search.html src/olympia/editors/forms.py src/olympia/editors/templates/editors/queue.html
 #: src/olympia/editors/templates/editors/themes/queue_list.html src/olympia/search/templates/search/collections.html src/olympia/search/templates/search/mobile/results.html
@@ -4205,11 +4203,11 @@ msgstr "Sykresultaten"
 #. {0} is a search term, such as Firebug.
 #: src/olympia/devhub/templates/devhub/devhub_search.html src/olympia/search/templates/search/results.html
 msgid "Search Results for \"{0}\""
-msgstr ""
+msgstr "Sykresultaten foar ‘{0}’"
 
 #: src/olympia/devhub/templates/devhub/devhub_search.html
 msgid "Please enter some search terms."
-msgstr ""
+msgstr "Fier inkelde syktermen yn."
 
 #: src/olympia/devhub/templates/devhub/devhub_search.html
 msgid "Loading results&hellip;"
@@ -4217,38 +4215,41 @@ msgstr "Resultaten lade…"
 
 #: src/olympia/devhub/templates/devhub/index-legacy.html
 msgid "Submit an Add-on"
-msgstr ""
+msgstr "In add-on yntsjinje"
 
 #: src/olympia/devhub/templates/devhub/index-legacy.html
 msgid "AMO Reviewers"
-msgstr ""
+msgstr "AMO-beoardielers"
 
 #: src/olympia/devhub/templates/devhub/index-legacy.html
 msgid "Get ahead! Become an AMO Reviewer today and get your add-ons reviewed faster."
-msgstr ""
+msgstr "Nim in foarsprong! Wurd hjoed noch AMO-beoardieler en krij jo add-ons flugger beoardiele."
 
 #: src/olympia/devhub/templates/devhub/index-legacy.html
 msgid "Become an AMO Reviewer"
-msgstr ""
+msgstr "In AMO-beoardieler wurde"
 
 #: src/olympia/devhub/templates/devhub/index-legacy.html
 msgid "Learn All About Add-ons"
-msgstr ""
+msgstr "Alles oer add-ons"
 
 #: src/olympia/devhub/templates/devhub/index-legacy.html
 msgid ""
-"Add-ons let millions of Firefox users enhance and customize their browsing experience. If you're a Web developer and know <a href=\"https://developer.mozilla.org/docs/Web/HTML\">HTML</a>, <a href="
-"\"https://developer.mozilla.org/docs/Web/JavaScript\">JavaScript</a>, and <a href=\"https://developer.mozilla.org/docs/Web/CSS\">CSS</a>, you already have all the necessary skills to make a great "
-"add-on."
+"Add-ons let millions of Firefox users enhance and customize their browsing experience. If you're a Web developer and know <a href=\"https://developer.mozilla.org/docs/Web/HTML\">HTML</a>, <a "
+"href=\"https://developer.mozilla.org/docs/Web/JavaScript\">JavaScript</a>, and <a href=\"https://developer.mozilla.org/docs/Web/CSS\">CSS</a>, you already have all the necessary skills to make a "
+"great add-on."
 msgstr ""
+"Mei add-ons kinne miljoenen Firefox-brûkers harren sneupûnderfining ferbetterje en oanpasse. As jo in webûntwikkeler binne en ferstân hawwe fan <a "
+"href=\"https://developer.mozilla.org/docs/Web/HTML\">HTML</a>, <a href=\"https://developer.mozilla.org/docs/Web/JavaScript\">JavaScript</a> en <a "
+"href=\"https://developer.mozilla.org/docs/Web/CSS\">CSS</a>, dan hawwe jo al de nedige feardichheden om in bjusterbaarlike add-on te meitsjen."
 
 #: src/olympia/devhub/templates/devhub/index-legacy.html
 msgid "Head over to the <a href=\"https://developer.mozilla.org/Add-ons\">Mozilla Developer Network</a> to learn everything you need to know to get started."
-msgstr ""
+msgstr "Gean nei it <a href=\"https://developer.mozilla.org/Add-ons\">Mozilla Developer Network</a> om alles wat jo witte moatte om te begjinnen te learen."
 
 #: src/olympia/devhub/templates/devhub/index-legacy.html
 msgid "Start Making Add-ons"
-msgstr ""
+msgstr "Start mei it meitsjen fan add-ons"
 
 #: src/olympia/devhub/templates/devhub/addons/listing/items.html src/olympia/devhub/templates/devhub/includes/addon_details.html src/olympia/devhub/templates/devhub/index-legacy.html
 #: src/olympia/devhub/templates/devhub/personas/edit.html
@@ -4257,46 +4258,46 @@ msgstr "Steat:"
 
 #: src/olympia/devhub/templates/devhub/index-legacy.html
 msgid "Latest Version:"
-msgstr ""
+msgstr "Nijste ferzje:"
 
 #: src/olympia/devhub/templates/devhub/includes/addon_details.html src/olympia/devhub/templates/devhub/index-legacy.html src/olympia/devhub/templates/devhub/personas/edit.html
 msgid "Queue Position:"
-msgstr ""
+msgstr "Posysje yn wachtrige:"
 
 #: src/olympia/devhub/templates/devhub/includes/addon_details.html src/olympia/devhub/templates/devhub/index-legacy.html src/olympia/devhub/templates/devhub/personas/edit.html
 #, python-format
 msgid "%(position)s of %(total)s"
-msgstr ""
+msgstr "%(position)s fan %(total)s"
 
 #: src/olympia/devhub/templates/devhub/includes/addons_edit_nav.html src/olympia/devhub/templates/devhub/index-legacy.html
 msgid "Upload New Version"
-msgstr ""
+msgstr "Nije ferzje oplade"
 
 #: src/olympia/devhub/templates/devhub/index-legacy.html
 msgid "View all add-ons ►"
-msgstr ""
+msgstr "Alle add-ons besjen ►"
 
 #: src/olympia/devhub/templates/devhub/index-legacy.html
 msgid "Publish your add-ons!"
-msgstr ""
+msgstr "Publisearje jo add-ons!"
 
 #: src/olympia/devhub/templates/devhub/index-legacy.html
 msgid "There's no better way to distribute your add-on than by hosting it on Mozilla Add-ons."
-msgstr ""
+msgstr "Der is gjin bettere manier om jo add-on te fersprieden dan troch dizze hoste te litten op Mozilla Add-ons."
 
 #: src/olympia/devhub/templates/devhub/index-legacy.html
 #, python-format
 msgid "Upload an <a href=\"%(addon_url)s\">add-on</a> or <a href=\"%(theme_url)s\">theme</a> to get started!"
-msgstr ""
+msgstr "Laad in <a href=\"%(addon_url)s\">add-on</a> of <a href=\"%(theme_url)s\">tema</a> op om te begjinnen!"
 
 #: src/olympia/devhub/templates/devhub/nav.html
 msgid "Return to the DevHub homepage"
-msgstr ""
+msgstr "Tebek nei de startside fan de ûntwikkelershub"
 
 #. Text in small tag is smaller and on its own line.
 #: src/olympia/devhub/templates/devhub/nav.html
 msgid "<small>Add-on</small> Developer Hub"
-msgstr ""
+msgstr "<small>Add-on</small>-ûntwikkelershub"
 
 #: src/olympia/devhub/templates/devhub/nav.html
 msgid "more add-ons..."
@@ -4308,11 +4309,11 @@ msgstr "Dokumintaasje"
 
 #: src/olympia/devhub/templates/devhub/nav.html
 msgid "Extension Development"
-msgstr ""
+msgstr "Utwreidingsûntwikling"
 
 #: src/olympia/devhub/templates/devhub/nav.html
 msgid "Lightweight Themes"
-msgstr ""
+msgstr "Ljochtgewicht-tema’s"
 
 #: src/olympia/devhub/templates/devhub/nav.html
 msgid "Add-on Policies"
@@ -4320,19 +4321,19 @@ msgstr "Add-onbelied"
 
 #: src/olympia/devhub/templates/devhub/nav.html
 msgid "Add-on Validator"
-msgstr ""
+msgstr "Add-on-falidator"
 
 #: src/olympia/devhub/templates/devhub/nav.html
 msgid "Add-on Compatibility Checker"
-msgstr ""
+msgstr "Add-on Compatibility Checker"
 
 #: src/olympia/devhub/templates/devhub/nav.html
 msgid "Development Add-ons"
-msgstr ""
+msgstr "Untwikkelings-add-ons"
 
 #: src/olympia/devhub/templates/devhub/nav.html
 msgid "Community & Support"
-msgstr ""
+msgstr "Mienskip en stipe"
 
 #: src/olympia/devhub/templates/devhub/nav.html
 msgid "Add-ons Blog"
@@ -4344,27 +4345,27 @@ msgstr "Add-onsfoarum"
 
 #: src/olympia/devhub/templates/devhub/nav.html
 msgid "More Resources"
-msgstr ""
+msgstr "Mear helpboarnen"
 
 #: src/olympia/devhub/templates/devhub/search.html
 msgid "Search Developer Docs"
-msgstr ""
+msgstr "Untwikkelersdokumintaasje trochsykje"
 
 #: src/olympia/devhub/templates/devhub/validate_addon.html
 msgid "Use the field below to upload your add-on package."
-msgstr ""
+msgstr "Brûk ûndersteand fjild om jo add-on-pakket op te laden."
 
 #: src/olympia/devhub/templates/devhub/validate_addon.html
 msgid "After upload, a series of automated validation tests will run to check compatibility with the following application version:"
-msgstr ""
+msgstr "Nei de oplaad wurdt in oantal automatisearre falidaasjetests útfierd om te kontrolearjen op kompatibiliteit mei de folgjende tapassingsferzje:"
 
 #: src/olympia/devhub/templates/devhub/validate_addon.html
 msgid "After upload, a series of automated validation tests will be run on your file."
-msgstr ""
+msgstr "Nei de oplaad wurdt in oantal automatisearre falidaasjetests op jo bestân útfierd."
 
 #: src/olympia/devhub/templates/devhub/validate_addon.html
 msgid "Do you want your add-on to be distributed on this site?"
-msgstr ""
+msgstr "Wolle jo jo add-on op dizze website ferspriede litte?"
 
 #. first parameter is a filename like lorem-ipsum-1.0.2.xpi
 #: src/olympia/devhub/templates/devhub/validation.html
@@ -4423,9 +4424,7 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/addons/ajax_compat_error.html
 #, python-format
-msgid ""
-"<a href=\"#\" class=\"button compat-update\" data-updateurl=\"%(update_url)s\">Update Compatibility</a> <a href=\"%(version_url)s\" class=\"button\">Upload New Version</a> or <a href=\"#\" class="
-"\"close\">Ignore</a>"
+msgid "<a href=\"#\" class=\"button compat-update\" data-updateurl=\"%(update_url)s\">Update Compatibility</a> <a href=\"%(version_url)s\" class=\"button\">Upload New Version</a> or <a href=\"#\" class=\"close\">Ignore</a>"
 msgstr ""
 
 #: src/olympia/devhub/templates/devhub/addons/ajax_compat_status.html
@@ -4579,8 +4578,7 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/addons/edit/basic.html
 #, python-format
-msgid ""
-"Categories cannot be changed while your add-on is featured for this application. Please email <a href=\"mailto:%(email)s\">%(email)s</a> if there is a reason you need to modify your categories."
+msgid "Categories cannot be changed while your add-on is featured for this application. Please email <a href=\"mailto:%(email)s\">%(email)s</a> if there is a reason you need to modify your categories."
 msgstr ""
 
 #: src/olympia/devhub/templates/devhub/addons/edit/basic.html
@@ -4648,8 +4646,8 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/addons/edit/support.html
 msgid ""
-"If you wish to display an e-mail address for support inquiries, enter it here. If you have different addresses for each language multiple translations of this field can be added. It is only "
-"relevant for listed add-ons."
+"If you wish to display an e-mail address for support inquiries, enter it here. If you have different addresses for each language multiple translations of this field can be added. It is only relevant"
+" for listed add-ons."
 msgstr ""
 
 #: src/olympia/devhub/templates/devhub/addons/edit/support.html
@@ -4884,6 +4882,8 @@ msgid ""
 "Deleting your add-on will permanently delete all versions and files you have submitted for this add-on, listed or not. The add-on ID will continue to be linked to your account, so others won't be "
 "able to submit versions using the same ID."
 msgstr ""
+"Troch jo add-on fuort te smiten wurde alle ferzjes en bestannen dy't jo foar dizze add-on yntsjinne hawwe foar altyd fuortsmiten, fermeld of net. De add-on-ID bliuwt noch wol oan jo account keppele,"
+" sadat oaren gjin ferzjes fia deselde ID yntsjinje kinne."
 
 #: src/olympia/devhub/templates/devhub/addons/listing/delete_form.html
 msgid "Enter the following text confirm your decision: {slug}"
@@ -4996,9 +4996,8 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: src/olympia/devhub/templates/devhub/addons/submit/base.html
-#, fuzzy
 msgid "Submit a New File"
-msgstr "In nij tema yntsjinje"
+msgstr "In nij bestân yntsjinje"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/base.html
 msgid "Submit a New Version"
@@ -5118,7 +5117,7 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/addons/submit/done.html
 msgid "You can also edit this version to add version notes, or source code if your submission includes minified, obfuscated or compiled code."
-msgstr ""
+msgstr "Jo kinne dizze ferzje ek bewurkje om ferzje-opmerkingen ta te foegjen, of boarnekoade as jo ynstjoering ferlytse, ferwale of kompilearre koade befettet."
 
 #: src/olympia/devhub/templates/devhub/addons/submit/done.html
 msgid "Edit version {0}"
@@ -5138,7 +5137,7 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/addons/submit/done.html
 msgid "You selected only some of the available platforms for this submission. You can upload more files that target other platforms:"
-msgstr ""
+msgstr "Jo hawwe mar inkelde fan de beskikbere platfoarms foar dizze ynstjoering selektearre. Jo kinne mear bestannen oplade dy't op oare platfoarms rjochte binne:"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/done.html src/olympia/devhub/templates/devhub/addons/submit/upload.html
 msgid "Upload File"
@@ -5157,9 +5156,8 @@ msgid "Upload Add-on"
 msgstr ""
 
 #: src/olympia/devhub/templates/devhub/addons/submit/upload.html
-#, fuzzy
 msgid "Where to Host File"
-msgstr "Wêr't de ferzje host wurdt"
+msgstr "Wêr't it bestân host wurdt"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/upload.html
 msgid "Where to Host Version"
@@ -5186,9 +5184,8 @@ msgid "Administrative overrides"
 msgstr ""
 
 #: src/olympia/devhub/templates/devhub/addons/submit/upload.html
-#, fuzzy
 msgid "Submit File for Review"
-msgstr "Ferzje foar beoardieling yntsjinje"
+msgstr "Bestân foar beoardieling yntsjinje"
 
 #: src/olympia/devhub/templates/devhub/addons/submit/upload.html
 msgid "Sign Add-on"
@@ -5222,8 +5219,8 @@ msgstr ""
 #: src/olympia/devhub/templates/devhub/api/key.html
 #, python-format
 msgid ""
-"To make API requests, send a <a href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> as the authorization header. You'll need to generate a JWT for every request as explained in the <a href=\"%(docs_url)s"
-"\">API documentation</a>."
+"To make API requests, send a <a href=\"%(jwt_url)s\">JSON Web Token (JWT)</a> as the authorization header. You'll need to generate a JWT for every request as explained in the <a "
+"href=\"%(docs_url)s\">API documentation</a>."
 msgstr ""
 
 #: src/olympia/devhub/templates/devhub/api/key.html
@@ -5261,6 +5258,8 @@ msgstr ""
 #: src/olympia/devhub/templates/devhub/includes/addon_details.html
 msgid "Your add-on won't be included in search results, and its listing page will indicate you disabled it. New version submissions for listing won't be accepted in this state."
 msgstr ""
+"Jo add-on wurdt net yn sykresultaten opnommen, en de fermeldingsside derfan jout oan dat jo de add-on útskeakele hawwe. Ynstjoeringen fan nije ferzjes foar fermelding wurde yn dizze tastân net "
+"akseptearre."
 
 #: src/olympia/devhub/templates/devhub/includes/addon_details.html
 msgid "Created:"
@@ -5273,27 +5272,24 @@ msgid "%%b %%e, %%Y"
 msgstr ""
 
 #: src/olympia/devhub/templates/devhub/includes/addon_details.html
-#, fuzzy
 msgid "Add-on Multi Process Status:"
-msgstr "Add-on-steat"
+msgstr "Multiprocess-steat fan add-on:"
 
 #: src/olympia/devhub/templates/devhub/includes/addon_details.html
 msgid "Your add-on compatibility with Multi Process Firefox (e10s)."
 msgstr ""
 
 #: src/olympia/devhub/templates/devhub/includes/addon_details.html
-#, fuzzy
 msgid "Listed Version:"
-msgstr "Nije ferzje"
+msgstr "Fermelde ferzje:"
 
 #: src/olympia/devhub/templates/devhub/includes/addon_details.html
 msgid "This is the version of your add-on that will be installed if someone clicks the Install button on addons.mozilla.org."
-msgstr ""
+msgstr "Dit is de ferzje fan jo add-on dy't ynstallearre wurdt as ien op de knop Ynstallearje klikt op addons.mozilla.org."
 
 #: src/olympia/devhub/templates/devhub/includes/addon_details.html
-#, fuzzy
 msgid "Next Listed Version:"
-msgstr "Nije ferzje"
+msgstr "Folgjende fermelde ferzje:"
 
 #: src/olympia/devhub/templates/devhub/includes/addon_details.html
 msgid "This is the newest uploaded version, however it isn’t live on the site yet."
@@ -5304,13 +5300,12 @@ msgid "Queues are not reviewed strictly in order"
 msgstr ""
 
 #: src/olympia/devhub/templates/devhub/includes/addon_details.html
-#, fuzzy
 msgid "Lastest Version:"
-msgstr "Nije ferzje"
+msgstr "Nijste ferzje:"
 
 #: src/olympia/devhub/templates/devhub/includes/addon_details.html
 msgid "This is the newest uploaded unlisted version."
-msgstr ""
+msgstr "Dit is de nijste opladen net-fermelde ferzje."
 
 #: src/olympia/devhub/templates/devhub/includes/addons_create_profile.html
 msgid "(required since this add-on accepts contributions)"
@@ -5442,20 +5437,19 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/blog_posts.html
 msgid "Latest News"
-msgstr ""
+msgstr "Lêste nijs"
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/blog_posts.html
 msgid "Read more in our Blog"
-msgstr ""
+msgstr "Lês mear op ús blog"
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/navigation.html
-#, fuzzy
 msgid "Add-on Developer Hub"
-msgstr "Untwikkelershub"
+msgstr "Add-on-ûntwikkelershub"
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/navigation.html
 msgid "Docs"
-msgstr ""
+msgstr "Dokuminten"
 
 # Link text to the AMO blog.
 #: src/olympia/devhub/templates/devhub/new-landing/components/navigation.html src/olympia/templates/footer.html
@@ -5463,50 +5457,48 @@ msgid "Blog"
 msgstr "Blog"
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/navigation.html
-#, fuzzy
 msgid "Sign In"
-msgstr "Add-on ûndertekenje"
+msgstr "Oanmelde"
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/overview.html
 msgid "Customize Your Firefox"
-msgstr ""
+msgstr "Jo Firefox oanpasse"
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/overview.html
 msgid ""
 "Add-ons let millions of Firefox users enhance their browsing experience. If you know <a href=\"#\">HTML</a>, <a href=\"#\">JavaScript</a>, and <a href=\"#\">CSS</a>, you already have all the "
 "necessary skills to make a great add-on."
 msgstr ""
+"Mei add-ons kinne miljoenen Firefox-brûkers harren sneupûnderfining ferbetterje. As jo <a href=\"#\">HTML</a>, <a href=\"#\">JavaScript</a> en <a href=\"#\">CSS</a> kinne, hawwe jo al de nedige "
+"feardichheden om in geweldige add-on te meitsjen."
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/overview.html
 msgid "Learn How to make an Add-on"
-msgstr ""
+msgstr "Lear in add-on te meitsjen"
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/tools.html
 msgid "Validator"
-msgstr ""
+msgstr "Falidator"
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/tools.html
-#, fuzzy
 msgid "Automated code tests for your add-on."
-msgstr "Rapporten foar jo add-ons"
+msgstr "Automatisearre koadetests foar jo add-on."
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/tools.html
-#, fuzzy
 msgid "Compatibility Checker"
-msgstr "Add-on-kompatibiliteitssintrum"
+msgstr "Kompatibiliteitskontrôle"
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/tools.html
 msgid "See if your add-on is likely to be affected by changes in Firefox."
-msgstr ""
+msgstr "Besjoch oft jo add-on wierskynlik troch wizigingen yn Firefox beynfloede wurdt."
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/tools.html
-#, fuzzy
 msgid "Compatibility Reporter"
-msgstr "Add-on-kompatibiliteitsrapporten"
+msgstr "Kompatibiliteitsrapportaazje"
 
 #: src/olympia/devhub/templates/devhub/new-landing/components/tools.html
 msgid "Tell us if an add-on works in a particular version of Firefox."
-msgstr ""
+msgstr "Lit ús witte oft in add-on yn in bepaalde ferzje fan Firefox wurket."
 
 #: src/olympia/devhub/templates/devhub/payments/payments.html
 msgid "You are currently requesting <b>contributions</b> from users"
@@ -5543,7 +5535,7 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/payments/payments.html
 msgid "Contributions are only available for add-ons with listed versions."
-msgstr ""
+msgstr "Bydragen binne allinnich beskikber foar add-ons mei fermelde ferzjes."
 
 #: src/olympia/devhub/templates/devhub/payments/payments.html
 #, python-format
@@ -5885,8 +5877,8 @@ msgstr ""
 msgid "Status & Versions"
 msgstr ""
 
-# {0} is the name of the collection
 #. {0} is an add-on name.
+# {0} is the name of the collection
 #: src/olympia/devhub/templates/devhub/versions/edit.html
 msgid "Manage {0}"
 msgstr ""
@@ -6004,26 +5996,25 @@ msgid "Reply"
 msgstr ""
 
 #: src/olympia/devhub/templates/devhub/versions/list.html
-#, fuzzy
 msgid "Listing visibility"
-msgstr "Sichtberheid"
+msgstr "Sichtberheid fan fermelding"
 
 #: src/olympia/devhub/templates/devhub/versions/list.html
-#, fuzzy
 msgid "Visible:"
-msgstr "Sichtberheid"
+msgstr "Sichtber:"
 
 #: src/olympia/devhub/templates/devhub/versions/list.html
 msgid "Visible to everyone on {0} and included in search results and listing pages."
-msgstr ""
+msgstr "Sichtber foar elkenien op {0} en opnommen yn sykresultaten en fermeldingssiden."
 
 #: src/olympia/devhub/templates/devhub/versions/list.html
 msgid "Invisible:"
-msgstr ""
+msgstr "Net sichtber:"
 
 #: src/olympia/devhub/templates/devhub/versions/list.html
 msgid "Won't be included in search results, and its listing page will indicate you disabled it. New version submissions for listing won't be accepted in this state."
 msgstr ""
+"Wurdt net yn sykresultaten opnommen, en de fermeldingsside derfan jout oan dat jo de add-on útskeakele hawwe. Ynstjoeringen fan nije ferzjes foar fermelding wurde yn dizze tastân net akseptearre."
 
 #: src/olympia/devhub/templates/devhub/versions/list.html
 msgid "Unlisted:"
@@ -6034,9 +6025,8 @@ msgid "Not distributed on {0}. Developers will upload new versions for signing a
 msgstr ""
 
 #: src/olympia/devhub/templates/devhub/versions/list.html
-#, fuzzy
 msgid "Listed versions"
-msgstr "Oare ferzjes besjen"
+msgstr "Fermelde ferzjes"
 
 #: src/olympia/devhub/templates/devhub/versions/list.html
 msgid "Currently on AMO"
@@ -6061,18 +6051,19 @@ msgstr ""
 
 #: src/olympia/devhub/templates/devhub/versions/list.html
 msgid "Why can't I switch to <i>Listed</i>?"
-msgstr ""
+msgstr "Wêrom kin ik net skeakelje nei <i>Liste</i>?"
 
 #: src/olympia/devhub/templates/devhub/versions/list.html
 msgid ""
 "Due to technical limitations, you need to delete your entire add-on and resubmit it using this AMO account in order to switch your add-on to listed.\n"
 "        The process is described in detail in <a href=\"{link}\">this documentation</a>."
 msgstr ""
+"Fanwegen technyske beheiningen moatte jo jo hiele add-on fuortsmite en opnij fia dizze AMO-account yntsjinje om jo add-on nei fermeld om te setten.\n"
+"        It proses wurdt yn detail beskreaun yn <a href=\"{link}\">dizze dokumintaasje</a>."
 
 #: src/olympia/devhub/templates/devhub/versions/list.html
-#, fuzzy
 msgid "All versions"
-msgstr "Alle ferzjes besjen"
+msgstr "Alle ferzjes"
 
 #: src/olympia/devhub/templates/devhub/versions/list.html
 msgid "Upload a New Version"
@@ -6187,13 +6178,12 @@ msgid "Are you constantly scrolling through your bookmarks? Bring your lists int
 msgstr "Skowe jo hieltyd troch jo blêdwizers? Bring jo listen yn byld mei ien inkelde simpele beweging."
 
 #: src/olympia/discovery/data.py
-#, fuzzy
 msgid "Enhance YouTube {start_sub_heading}with {addon_name}{end_sub_heading}"
-msgstr "Ienfâldich tagong ta blêdwizers {start_sub_heading}mei {addon_name}{end_sub_heading}"
+msgstr "Ferbetterje YouTube {start_sub_heading}mei {addon_name}{end_sub_heading}"
 
 #: src/olympia/discovery/data.py
 msgid "Automatically play YouTube videos in high-def, turn off annotations, adjust player size, and many other ways to personalize your video-watching experience."
-msgstr ""
+msgstr "YouTube-fideo’s automatysk ôfspylje yn HD, oantekeningen útsette, spilergrutte oanpasse, en in protte oare manieren om jo ûnderfining mei it besjen fan fideo’s te personalisearjen."
 
 #: src/olympia/editors/forms.py
 msgid "Approved reviews"
@@ -8314,8 +8304,7 @@ msgstr ""
 
 #: src/olympia/pages/templates/pages/about.lhtml
 #, python-format
-msgid ""
-"Help improve this website. It's open source, and you can file bugs and submit patches. <a href=\"%(url)s\"> GitHub</a> contains all of our current bugs, legacy bugs can still be found in Bugzilla."
+msgid "Help improve this website. It's open source, and you can file bugs and submit patches. <a href=\"%(url)s\"> GitHub</a> contains all of our current bugs, legacy bugs can still be found in Bugzilla."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/about.lhtml
@@ -8341,9 +8330,7 @@ msgstr ""
 
 #: src/olympia/pages/templates/pages/about.lhtml
 #, python-format
-msgid ""
-"A good place to start is our <a href=\"%(faq_url)s\"><abbr title=\"Frequently Asked Questions\">FAQ</abbr></a>. If you don't find an answer there, you can <a href=\"%(forum_url)s\"> ask on our "
-"forums</a>."
+msgid "A good place to start is our <a href=\"%(faq_url)s\"><abbr title=\"Frequently Asked Questions\">FAQ</abbr></a>. If you don't find an answer there, you can <a href=\"%(forum_url)s\"> ask on our forums</a>."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/about.lhtml
@@ -8358,8 +8345,8 @@ msgstr ""
 #: src/olympia/pages/templates/pages/about.lhtml
 #, python-format
 msgid ""
-"Over the years, many people have contributed to this website, including both volunteers from the community and a dedicated AMO team. A list of significant contributors can be found on our <a href="
-"\"%(url)s\"> Site Credits</a> page."
+"Over the years, many people have contributed to this website, including both volunteers from the community and a dedicated AMO team. A list of significant contributors can be found on our <a "
+"href=\"%(url)s\"> Site Credits</a> page."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/acr_firstrun.html
@@ -8573,8 +8560,8 @@ msgstr ""
 #, python-format
 msgid ""
 "This file, called an <a href=\"%(url)s\">Install Manifest</a>, is used by Add-on Manager-enabled XUL applications to determine information about an add-on as it is being installed. It contains "
-"metadata identifying the add-on, providing information about who created it, where more information can be found about it, which versions of what applications it is compatible with, how it should "
-"be updated, and so on. The format of the Install Manifest is RDF/XML."
+"metadata identifying the add-on, providing information about who created it, where more information can be found about it, which versions of what applications it is compatible with, how it should be"
+" updated, and so on. The format of the Install Manifest is RDF/XML."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/dev_faq.html
@@ -8621,9 +8608,9 @@ msgstr ""
 
 #: src/olympia/pages/templates/pages/dev_faq.html
 msgid ""
-"To ensure compatibility with the latest Mozilla software, it's important to download updates as they become available and test your add-on to ensure that it is still functioning as expected. In "
-"many cases, the latest version of Mozilla software may be a beta release. Since these releases at times introduce architectural changes that may impact the functionality of your add-on, it's "
-"important to be actively involved in the beta process to ensure that your add-on users are not negatively impacted upon final release of Mozilla software."
+"To ensure compatibility with the latest Mozilla software, it's important to download updates as they become available and test your add-on to ensure that it is still functioning as expected. In many"
+" cases, the latest version of Mozilla software may be a beta release. Since these releases at times introduce architectural changes that may impact the functionality of your add-on, it's important "
+"to be actively involved in the beta process to ensure that your add-on users are not negatively impacted upon final release of Mozilla software."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/dev_faq.html
@@ -8633,8 +8620,8 @@ msgstr ""
 #: src/olympia/pages/templates/pages/dev_faq.html
 #, python-format
 msgid ""
-"Poorly written extensions can have a severe impact on the browsing experience, including on the overall performance of Firefox itself. The following page contains many good <a href=\"%(url)s"
-"\">guides</a> that help you improve performance, whether you're developing core Mozilla code or an add-on."
+"Poorly written extensions can have a severe impact on the browsing experience, including on the overall performance of Firefox itself. The following page contains many good <a "
+"href=\"%(url)s\">guides</a> that help you improve performance, whether you're developing core Mozilla code or an add-on."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/dev_faq.html
@@ -8705,8 +8692,8 @@ msgstr ""
 #: src/olympia/pages/templates/pages/dev_faq.html
 #, python-format
 msgid ""
-"Yes. You may find 3rd party developers via the <a href=\"%(forum_url)s\">Add-ons forum</a>, <a href=\"%(list_url)s\">mozilla.jobs list</a>, <a href=\"%(mz_url)s\">mozillaZine forums</a> or <a href="
-"\"%(wiki_url)s\">the Mozilla Wiki</a>. Please note that Mozilla does not offer developer recommendations."
+"Yes. You may find 3rd party developers via the <a href=\"%(forum_url)s\">Add-ons forum</a>, <a href=\"%(list_url)s\">mozilla.jobs list</a>, <a href=\"%(mz_url)s\">mozillaZine forums</a> or <a "
+"href=\"%(wiki_url)s\">the Mozilla Wiki</a>. Please note that Mozilla does not offer developer recommendations."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/dev_faq.html
@@ -8795,8 +8782,8 @@ msgstr ""
 
 #: src/olympia/pages/templates/pages/dev_faq.html
 msgid ""
-"The choice of category is dependent on what type of audience you are targeting and the functionality of your add-on. If you're unsure of which category your add-on falls into, please choose \"Other"
-"\". The AMO team may re-categorize your add-on if it's determined that it's better suited in a different category."
+"The choice of category is dependent on what type of audience you are targeting and the functionality of your add-on. If you're unsure of which category your add-on falls into, please choose "
+"\"Other\". The AMO team may re-categorize your add-on if it's determined that it's better suited in a different category."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/dev_faq.html
@@ -8833,8 +8820,8 @@ msgstr ""
 #: src/olympia/pages/templates/pages/dev_faq.html
 #, python-format
 msgid ""
-"Add-ons are reviewed by the AMO Editors, a group of talented developers that volunteer to help the Mozilla project by reviewing add-ons to ensure a stable and safe experience for Mozilla users. "
-"When communicating with editors, please be courteous, patient and respectful as they are working hard to ensure that your add-on is set up correctly and follows the guidelines outlined in the <a "
+"Add-ons are reviewed by the AMO Editors, a group of talented developers that volunteer to help the Mozilla project by reviewing add-ons to ensure a stable and safe experience for Mozilla users. When"
+" communicating with editors, please be courteous, patient and respectful as they are working hard to ensure that your add-on is set up correctly and follows the guidelines outlined in the <a "
 "href=\"%(url)s\">Editors Reviewing Guide</a>."
 msgstr ""
 
@@ -8875,8 +8862,8 @@ msgstr ""
 #: src/olympia/pages/templates/pages/dev_faq.html
 #, python-format
 msgid ""
-"This is why it's very important to read the <a href=\"%(g_url)s\">Editors Reviewing Guide</a> to ensure that your add-on is setup as expected. It's also a good idea to read the blog post, <a href="
-"\"%(blog_url)s\">Successfully Getting your Add-on Reviewed</a> which provides excellent insight into ensuring a smooth review of your add-on."
+"This is why it's very important to read the <a href=\"%(g_url)s\">Editors Reviewing Guide</a> to ensure that your add-on is setup as expected. It's also a good idea to read the blog post, <a "
+"href=\"%(blog_url)s\">Successfully Getting your Add-on Reviewed</a> which provides excellent insight into ensuring a smooth review of your add-on."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/dev_faq.html
@@ -8964,10 +8951,10 @@ msgstr ""
 
 #: src/olympia/pages/templates/pages/dev_faq.html
 msgid ""
-"Do you need more information about the various open source licenses? Are you confused as to which license you should select? What rights does a specific license grant? While nothing replaces "
-"reading the full terms of a license, below are some sites that contain information about some of the key open source licenses that may help you sort out the differences between them. These sites "
-"are being provided solely for your convenience and as a reference for your personal use. These resources do not constitute legal advice nor should they be used in lieu of such advice. Mozilla "
-"neither guarantees nor is responsible for the content of these sites or your reliance on such content."
+"Do you need more information about the various open source licenses? Are you confused as to which license you should select? What rights does a specific license grant? While nothing replaces reading"
+" the full terms of a license, below are some sites that contain information about some of the key open source licenses that may help you sort out the differences between them. These sites are being "
+"provided solely for your convenience and as a reference for your personal use. These resources do not constitute legal advice nor should they be used in lieu of such advice. Mozilla neither "
+"guarantees nor is responsible for the content of these sites or your reliance on such content."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/dev_faq.html
@@ -9025,9 +9012,10 @@ msgstr ""
 #: src/olympia/pages/templates/pages/faq.html
 #, python-format
 msgid ""
-"Add-ons listed in this gallery only work with Mozilla-based applications, such as <a href=\"%(getfirefox_url)s\">Firefox</a>, <a href=\"%(getmobile_url)s\">Firefox Mobile</a>, <a href="
-"\"%(getseamonkey_url)s\">SeaMonkey</a>, and <a href=\"%(getthunderbird_url)s\">Thunderbird</a>. However, not all add-ons work with each of those applications or every version of those applications. "
-"Each add-on specifies which applications and versions it works with, such as Firefox 2.0 - 3.6.*. For Firefox add-ons, the install buttons will indicate whether the add-on is compatible or not."
+"Add-ons listed in this gallery only work with Mozilla-based applications, such as <a href=\"%(getfirefox_url)s\">Firefox</a>, <a href=\"%(getmobile_url)s\">Firefox Mobile</a>, <a "
+"href=\"%(getseamonkey_url)s\">SeaMonkey</a>, and <a href=\"%(getthunderbird_url)s\">Thunderbird</a>. However, not all add-ons work with each of those applications or every version of those "
+"applications. Each add-on specifies which applications and versions it works with, such as Firefox 2.0 - 3.6.*. For Firefox add-ons, the install buttons will indicate whether the add-on is "
+"compatible or not."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/faq.html
@@ -9090,8 +9078,8 @@ msgstr ""
 #: src/olympia/pages/templates/pages/faq.html
 #, python-format
 msgid ""
-"In Firefox, add-ons marked with \"No restart required\" can be installed without restarting. These add-ons have been created using the <a href=\"%(sdk_url)s\">Add-on SDK</a> or <a href="
-"\"%(bootstrap_url)s\">bootstrapping</a>. Other add-ons will still require a restart before you can use them."
+"In Firefox, add-ons marked with \"No restart required\" can be installed without restarting. These add-ons have been created using the <a href=\"%(sdk_url)s\">Add-on SDK</a> or <a "
+"href=\"%(bootstrap_url)s\">bootstrapping</a>. Other add-ons will still require a restart before you can use them."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/faq.html
@@ -9102,8 +9090,8 @@ msgstr ""
 #, python-format
 msgid ""
 "Add-ons, unlike plugins, are automatically checked for updates once every day. In Firefox, updates are automatically installed by default. Versions of Firefox prior to 4 (and other applications) "
-"will alert you that updates to your add-ons are available. <a href=\"%(plugin_url)s\">Plugins</a> are not currently automatically checked for updates, so be sure to regularly visit the <a href="
-"\"%(plugincheck_url)s\">Plugin Check</a> page to stay up-to-date."
+"will alert you that updates to your add-ons are available. <a href=\"%(plugin_url)s\">Plugins</a> are not currently automatically checked for updates, so be sure to regularly visit the <a "
+"href=\"%(plugincheck_url)s\">Plugin Check</a> page to stay up-to-date."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/faq.html
@@ -9114,8 +9102,8 @@ msgstr ""
 #, python-format
 msgid ""
 "Unless clearly marked otherwise, add-ons available from this gallery have been checked and approved by Mozilla's team of editors and are safe to install. We recommend that you only install approved "
-"add-ons. If you wish to install unapproved add-ons or add-ons from third-party websites, use caution as these add-ons may harm your computer or violate your privacy. <a href=\"%(learnmore_url)s"
-"\">Learn more about our approval process</a>"
+"add-ons. If you wish to install unapproved add-ons or add-ons from third-party websites, use caution as these add-ons may harm your computer or violate your privacy. <a "
+"href=\"%(learnmore_url)s\">Learn more about our approval process</a>"
 msgstr ""
 
 #: src/olympia/pages/templates/pages/faq.html
@@ -9199,8 +9187,8 @@ msgstr ""
 #: src/olympia/pages/templates/pages/faq.html
 #, python-format
 msgid ""
-"While all add-ons publicly available in our gallery are reviewed by an editor, you may receive a direct link to an add-on that hasn't yet been reviewed. Use caution when installing these add-ons, "
-"as they could harm your computer or violate your privacy. We recommend that you only install reviewed add-ons. <a href=\"%(url)s\">Learn more about our review process</a></dd>"
+"While all add-ons publicly available in our gallery are reviewed by an editor, you may receive a direct link to an add-on that hasn't yet been reviewed. Use caution when installing these add-ons, as"
+" they could harm your computer or violate your privacy. We recommend that you only install reviewed add-ons. <a href=\"%(url)s\">Learn more about our review process</a></dd>"
 msgstr ""
 
 #: src/olympia/pages/templates/pages/faq.html
@@ -9227,8 +9215,8 @@ msgstr ""
 
 #: src/olympia/pages/templates/pages/faq.html
 msgid ""
-"Beta add-ons are unreviewed versions which represent the latest work of an add-on author. While different authors have different standards for beta code quality, you should assume that these add-"
-"ons are less stable than the general add-on releases."
+"Beta add-ons are unreviewed versions which represent the latest work of an add-on author. While different authors have different standards for beta code quality, you should assume that these add-ons"
+" are less stable than the general add-on releases."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/faq.html
@@ -9271,9 +9259,9 @@ msgstr ""
 #: src/olympia/pages/templates/pages/faq.html
 #, python-format
 msgid ""
-"The source code used to create an add-on is an exclusive copyright of the add-on author, unless otherwise declared in a source code license. Many add-ons on this site have <a href=\"%(url)s\" lang="
-"\"en\">open source licenses</a> that make the source code publicly available for copy and reuse under conditions determined by the author. Most authors choose widely known open source licenses like "
-"the GPL or BSD licenses instead of making up their own."
+"The source code used to create an add-on is an exclusive copyright of the add-on author, unless otherwise declared in a source code license. Many add-ons on this site have <a href=\"%(url)s\" "
+"lang=\"en\">open source licenses</a> that make the source code publicly available for copy and reuse under conditions determined by the author. Most authors choose widely known open source licenses "
+"like the GPL or BSD licenses instead of making up their own."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/faq.html
@@ -9312,8 +9300,8 @@ msgstr ""
 #: src/olympia/pages/templates/pages/faq.html
 #, python-format
 msgid ""
-"Mobile add-ons work with <a href=\"%(mobile_url)s\">Firefox for Mobile</a> and add or modify functionality just like desktop add-ons. You can find add-ons that work with Firefox for Mobile in our "
-"<a href=\"%(gallery_url)s\">gallery</a>."
+"Mobile add-ons work with <a href=\"%(mobile_url)s\">Firefox for Mobile</a> and add or modify functionality just like desktop add-ons. You can find add-ons that work with Firefox for Mobile in our <a"
+" href=\"%(gallery_url)s\">gallery</a>."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/faq.html
@@ -9344,8 +9332,8 @@ msgstr ""
 
 #: src/olympia/pages/templates/pages/review_guide.html
 msgid ""
-"Add-on reviews are a way for you to share your opinions about the add-ons you’ve installed and used. Our review moderation team reserves the right to refuse or remove any review that does not "
-"comply with these guidelines."
+"Add-on reviews are a way for you to share your opinions about the add-ons you’ve installed and used. Our review moderation team reserves the right to refuse or remove any review that does not comply"
+" with these guidelines."
 msgstr ""
 
 #: src/olympia/pages/templates/pages/review_guide.html
@@ -9550,9 +9538,9 @@ msgstr ""
 msgid ""
 "<h2>Keep these tips in mind:</h2> <ul> <li> Write like you're telling a friend about your experience with the add-on. Give specifics and helpful details, such as what features you liked and/or "
 "disliked, how easy to use it is, and any disadvantages it has. Avoid generic language such as calling it \"Great\" or \"Bad\" unless you can give reasons why you believe this is so. </li> <li> "
-"Please do not post bug reports in reviews. We do not make your email address available to add-on developers and they may need to contact you to help resolve your issue. See the <a href=\"%(support)s"
-"\">support section</a> to find out where to get assistance for this add-on. </li> <li>Please keep reviews clean, avoid the use of improper language and do not post any personal information. </li> </"
-"ul> <p>Please read the <a href=\"%(guide)s\">Review Guidelines</a> for more detail about user add-on reviews.</p>"
+"Please do not post bug reports in reviews. We do not make your email address available to add-on developers and they may need to contact you to help resolve your issue. See the <a "
+"href=\"%(support)s\">support section</a> to find out where to get assistance for this add-on. </li> <li>Please keep reviews clean, avoid the use of improper language and do not post any personal "
+"information. </li> </ul> <p>Please read the <a href=\"%(guide)s\">Review Guidelines</a> for more detail about user add-on reviews.</p>"
 msgstr ""
 
 #: src/olympia/reviews/templates/reviews/reply.html
@@ -9865,7 +9853,7 @@ msgstr ""
 #: src/olympia/signing/views.py
 #, python-format
 msgid "You cannot add versions to an addon that has status: %s."
-msgstr ""
+msgstr "Jo kinne gjin ferzjes oan in add-on mei de steat %s tafoegje."
 
 #: src/olympia/signing/views.py
 msgid "Version does not match the manifest file."
@@ -9881,7 +9869,7 @@ msgstr ""
 
 #: src/olympia/signing/views.py
 msgid "You cannot add a listed version to this addon via the API due to missing metadata. Please submit via the website"
-msgstr ""
+msgstr "Jo kinne gjin fermelde ferzje oan dizze add-on tafoegje fia de API fanwegen ûntbrekkende metagegevens. Tsjinje him yn fia de website"
 
 #: src/olympia/signing/views.py
 msgid "No uploaded file for that addon and version."
@@ -10186,11 +10174,11 @@ msgstr ""
 #: src/olympia/stats/templates/stats/reports/sources.html
 #, python-format
 msgid ""
-"<h2>Tracking external sources</h2> <p> If you link to your add-on's details page or directly to its file from an external site, such as your blog or website, you can append a parameter to be "
-"tracked as an additional download source on this page. For example, the following links would appear as sourced by your blog: <dl> <dt>Add-on Details Page</dt> <dd>https://addons.mozilla.org/addon/"
-"%(slug)s?src=<b>external-blog</b></dd> <dt>Direct File Link</dt> <dd>https://addons.mozilla.org/downloads/latest/%(id)s/addon-%(id)s-latest.xpi?src=<b>external-blog</b></dd> </dl> <p> Only src "
-"parameters that begin with \"external-\" will be tracked, up to 61 additional characters. Any text after \"external-\" can be used to describe the source, such as \"external-blog\", \"external-"
-"sidebar\", \"external-campaign225\", etc. The following URL-safe characters are allowed: <code>a-z A-Z - . _ ~ %% +</code>"
+"<h2>Tracking external sources</h2> <p> If you link to your add-on's details page or directly to its file from an external site, such as your blog or website, you can append a parameter to be tracked"
+" as an additional download source on this page. For example, the following links would appear as sourced by your blog: <dl> <dt>Add-on Details Page</dt> "
+"<dd>https://addons.mozilla.org/addon/%(slug)s?src=<b>external-blog</b></dd> <dt>Direct File Link</dt> <dd>https://addons.mozilla.org/downloads/latest/%(id)s/addon-%(id)s-latest.xpi?src=<b>external-"
+"blog</b></dd> </dl> <p> Only src parameters that begin with \"external-\" will be tracked, up to 61 additional characters. Any text after \"external-\" can be used to describe the source, such as "
+"\"external-blog\", \"external-sidebar\", \"external-campaign225\", etc. The following URL-safe characters are allowed: <code>a-z A-Z - . _ ~ %% +</code>"
 msgstr ""
 
 #: src/olympia/stats/templates/stats/reports/statuses.html
@@ -10995,8 +10983,8 @@ msgstr ""
 msgid "View the source"
 msgstr ""
 
-# {0} is the add-on name
 #. {0} is an add-on name.
+# {0} is the add-on name
 #: src/olympia/versions/templates/versions/version_list.html
 msgid "{0} Version History"
 msgstr ""
@@ -11079,6 +11067,5 @@ msgid "Addon"
 msgstr ""
 
 #: src/olympia/zadmin/views.py
-#, fuzzy
 msgid "Validation Result"
-msgstr "Jildige tapassingsferzjes"
+msgstr "Falidaasjeresultaat"
